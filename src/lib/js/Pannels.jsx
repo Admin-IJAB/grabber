@@ -5,13 +5,15 @@ const data = imgDataObj[0].imageList;
 export const CreatePannels = (props) => {
     // console.log(data)
     const listItems = data.map(item => (
-        <article className="panel-box" key={item.url}>
+        <article className="panel-card" key={item.url}>
+            <img className="img-prvw" src={`../../../public/local-works/imgs/FW-Valle-1-2022/${item.url}`}></img>
+            <p className="panel-title">{item.title}</p>
             <p>{item.url}</p>
         </article>
     ));
 
     return (
-        <section>
+        <section className="panel-box">
             {listItems}
         </section>
     )

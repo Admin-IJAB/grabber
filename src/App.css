@@ -33,10 +33,27 @@
   }
 }
 
-.card {
-  padding: 2em;
+
+.panel-box {
+  display: flex;
+  /* width: 90%; */
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.read-the-docs {
-  color: #888;
+.panel-card {
+  background-color: aquamarine;
+  padding: 1em;
+  margin: 15px;
+  height: 150px;
+  width: 150px;
+}
+
+.img-prvw {
+  height: 75px;
+  
+}
+
+.panel-title {
+  font-weight: 800;
 }
