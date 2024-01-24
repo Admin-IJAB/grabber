@@ -1,8 +1,10 @@
 #root {
-  max-width: 1280px;
+  /* max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem; */
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
 }
 
 .logo {
@@ -56,4 +58,34 @@
 
 .panel-title {
   font-weight: 800;
+}
+
+.nav-deck {
+  background-color: palegreen;
+}
+
+.nav-btns {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-btns > li {
+  margin: 5px;
+  /* padding: 5px;  */
+  text-align: left;
+  list-style: arabic-indic;
+}
+
+.nav-btns > li > button {
+  background-color: whitesmoke;
+  border-bottom-left-radius: 20px;
+  width: 70%;
+  margin-left: 20px;
+}
+
+li::marker {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.4em;
 }
