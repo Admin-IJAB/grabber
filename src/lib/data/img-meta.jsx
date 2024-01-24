@@ -3,6 +3,7 @@ export const imgDataObj = [
         chapter: "Valle is Home",
         poster: "F. Wilson",
         date: "1/1/2099",
+        folder: "FW-valle-is-home",
         imageList: [
             {
                 title: "portal",
@@ -115,6 +116,58 @@ export const imgDataObj = [
             {
                 title: "dream USA",
                 url: "Valle-25.JPG"
+            },
+        ]
+    },
+    {
+        chapter: "Philly in June",
+        poster: "F. Wilson",
+        date: "1/1/2099",
+        folder: "FW-philly-in-june",
+        imageList: [
+            {
+                title: "split ends",
+                url: "Phillyij-1.JPG"
+            },
+            {
+                title: "carnaval",
+                url: "Phillyij-2.JPG"
+            },
+            {
+                title: "wilder st",
+                url: "Phillyij-3.JPG"
+            },
+            {
+                title: "gerritt st",
+                url: "Phillyij-4.JPG"
+            },
+            {
+                title: "sanctuary",
+                url: "Phillyij-5.JPG"
+            },
+            {
+                title: "big rip",
+                url: "Phillyij-6.JPG"
+            },
+            {
+                title: "yard sale",
+                url: "Phillyij-7.JPG"
+            },
+            {
+                title: "if you can keep it",
+                url: "Phillyij-8.JPG"
+            },
+            {
+                title: "alter st 1",
+                url: "Phillyij-9.JPG"
+            },
+            {
+                title: "alter st 2",
+                url: "Phillyij-10.JPG"
+            },
+            {
+                title: "Washington & 7th",
+                url: "Phillyij-11.JPG"
             },
         ]
     }

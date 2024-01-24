@@ -1,12 +1,21 @@
 import { imgDataObj } from "../data/img-meta"
 
-const data = imgDataObj[0].imageList;
+const data = imgDataObj[0];
+
+// const urlStart = `../../../local-works/imgs/${data.folder}/${item.url}/`
+
+const locateUrl = (datFile) => {
+    const urlStart = `../assets/imgs/${data.folder}/${datFile}/`;
+    console.log(urlStart)
+    return urlStart;
+}
+
 
 export const CreatePannels = (props) => {
     // console.log(data)
-    const listItems = data.map(item => (
+    const listItems = data.imageList.map(item => (
         <article className="panel-card" key={item.url} onClick={() => console.log(item.url)}>
-            <img className="img-prvw" src={`../../../local-works/imgs/FW-Valle-1-2022/${item.url}`}></img>
+            <img className="img-prvw" src={locateUrl(item.url)}></img>
             <p className="panel-title">{item.title}</p>
             <p>{item.url}</p>
         </article>
