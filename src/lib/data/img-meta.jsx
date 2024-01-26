@@ -174,56 +174,41 @@ export const imgDataObj = [
         ]
     },
     {
-        chapter: "Philly in June",
+        chapter: "George's Garage",
         poster: "F. Wilson",
         date: "1/1/2099",
-        folder: "FW-philly-in-june",
-        cover: "Phillyij-1.JPG",
+        folder: "FW-georges-garage",
+        cover: "Gsgarage-3.JPG",
         imageList: [
             {
-                title: "split ends",
-                url: "Phillyij-1.JPG"
+                title: "spectator 1",
+                url: "Gsgarage-1-1.JPG"
             },
             {
-                title: "carnaval",
-                url: "Phillyij-2.JPG"
+                title: "spectator 2",
+                url: "Gsgarage-1-2.JPG"
             },
             {
-                title: "wilder st",
-                url: "Phillyij-3.JPG"
+                title: "spectator 3",
+                url: "Gsgarage-1-3.JPG"
             },
             {
-                title: "gerritt st",
-                url: "Phillyij-4.JPG"
+                title: "spectator 4",
+                url: "Gsgarage-1-4.JPG"
             },
             {
-                title: "sanctuary",
-                url: "Phillyij-5.JPG"
+                title: "1 grit",
+                url: "Gsgarage-2.JPG"
             },
             {
-                title: "big rip",
-                url: "Phillyij-6.JPG"
+                title: "20/20",
+                url: "Gsgarage-3.JPG"
             },
             {
-                title: "yard sale",
-                url: "Phillyij-7.JPG"
+                title: "bones",
+                url: "Gsgarage-4.JPG"
             },
-            {
-                title: "if you can keep it",
-                url: "Phillyij-8.JPG"
-            },
-            {
-                title: "alter st 1",
-                url: "Phillyij-9.JPG"
-            },
-            {
-                title: "alter st 2",
-                url: "Phillyij-10.JPG"
-            },
-            {
-                title: "Washington & 7th",
-                url: "Phillyij-11.JPG"
-            },
+            
         ]
     },
     {
