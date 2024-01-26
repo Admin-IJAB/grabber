@@ -38,8 +38,8 @@
   /* width: 90%; */
   flex-wrap: wrap;
   /* justify-content: center; */
-  justify-content: left;
-    margin-left: 15px;
+  justify-content: center;
+  margin-left: 30px;
 }
 
 .panel-card {
@@ -66,6 +66,7 @@
 
 .nav-deck {
   background-color: palegreen;
+  height: 100vh;
 }
 
 .nav-btns {

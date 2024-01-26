@@ -3,25 +3,12 @@ import reactLogo from './lib/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { imgDataObj } from './lib/data/img-meta.jsx'
-import { CreatePannels } from './lib/js/Pannels.jsx'
+import { CreatePannels, LoadAllChapters } from './lib/js/Pannels.jsx'
+import { NavRollout } from './lib/js/NavRollout.jsx'
 
 function App() {
   const [count, setCount] = useState(0)
-
-  const NavRollout = () => {
-    const navOps = ["index", "home", "pics", "mp3s", "notes", "about", "settings"];
-
-    const justPickOne = navOps.map((op, idx) => (
-      <li key={idx}><button key={op} className={op} onClick={() => console.log(`${op}-nBtn`)}>
-        {op}
-      </button></li>
-    ))
-    return (
-      <ul className='nav-btns'>
-        {justPickOne}
-      </ul>
-    )
-  }
+  const [activeChap, setChapter] = useState("pics") 
 
   return (
     <>
@@ -40,7 +27,7 @@ function App() {
           count is {count}
         </button>
         <div>
-          <CreatePannels />
+          <LoadAllChapters />
 
         </div>
       </div>
