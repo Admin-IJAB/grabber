@@ -1,10 +1,10 @@
 export const imgDataObj = [
     {
-        chapter: "Valle is Home",
+        title: "Valle is Home",
         poster: "F. Wilson",
         date: "1/1/2099",
         folder: "FW-valle-is-home",
-        cover: "Valle-12.JPG",
+        url: "Valle-12.JPG",
         imageList: [
             {
                 title: "portal",
@@ -121,11 +121,11 @@ export const imgDataObj = [
         ]
     },
     {
-        chapter: "Philly in June",
+        title: "Philly in June",
         poster: "F. Wilson",
         date: "1/1/2099",
         folder: "FW-philly-in-june",
-        cover: "Phillyij-1.JPG",
+        url: "Phillyij-1.JPG",
         imageList: [
             {
                 title: "split ends",
@@ -174,11 +174,11 @@ export const imgDataObj = [
         ]
     },
     {
-        chapter: "George's Garage",
+        title: "George's Garage",
         poster: "F. Wilson",
         date: "1/1/2099",
         folder: "FW-georges-garage",
-        cover: "Gsgarage-3.JPG",
+        url: "Gsgarage-3.JPG",
         imageList: [
             {
                 title: "spectator 1",
@@ -212,109 +212,163 @@ export const imgDataObj = [
         ]
     },
     {
-        chapter: "Philly in June",
+        title: "Cherry Season",
         poster: "F. Wilson",
         date: "1/1/2099",
-        folder: "FW-philly-in-june",
-        cover: "Phillyij-1.JPG",
+        folder: "FW-cherry-season",
+        url: "Cherryszn-4-10.JPG",
         imageList: [
             {
-                title: "split ends",
-                url: "Phillyij-1.JPG"
+                title: "barges",
+                url: "Cherryszn-1.JPG"
             },
             {
-                title: "carnaval",
-                url: "Phillyij-2.JPG"
+                title: "low tide",
+                url: "Cherryszn-2.JPG"
             },
             {
-                title: "wilder st",
-                url: "Phillyij-3.JPG"
+                title: "untitled 3",
+                url: "Cherryszn-3.JPG"
             },
             {
-                title: "gerritt st",
-                url: "Phillyij-4.JPG"
+                title: "in line 1",
+                url: "Cherryszn-4-1.JPG"
             },
             {
-                title: "sanctuary",
-                url: "Phillyij-5.JPG"
+                title: "in line 2",
+                url: "Cherryszn-4-2.JPG"
             },
             {
-                title: "big rip",
-                url: "Phillyij-6.JPG"
+                title: "in line 3",
+                url: "Cherryszn-4-3.JPG"
+            },
+            // {
+            //     title: "in line 4",
+            //     url: "Cherryszn-4-4.JPG"
+            // },
+            {
+                title: "in line 5 (inverted)",
+                url: "Cherryszn-4-5.JPG"
             },
             {
-                title: "yard sale",
-                url: "Phillyij-7.JPG"
+                title: "in line 6",
+                url: "Cherryszn-4-6.JPG"
             },
             {
-                title: "if you can keep it",
-                url: "Phillyij-8.JPG"
+                title: "in line 7 (healed)",
+                url: "Cherryszn-4-7.JPG"
             },
             {
-                title: "alter st 1",
-                url: "Phillyij-9.JPG"
+                title: "in line 8",
+                url: "Cherryszn-4-8.JPG"
             },
             {
-                title: "alter st 2",
-                url: "Phillyij-10.JPG"
+                title: "in line 9",
+                url: "Cherryszn-4-9.JPG"
             },
             {
-                title: "Washington & 7th",
-                url: "Phillyij-11.JPG"
+                title: "in line 10 (focused)",
+                url: "Cherryszn-4-10.JPG"
             },
+            {
+                title: "untitled 5",
+                url: "Cherryszn-5.JPG"
+            },
+            {
+                title: "first fell",
+                url: "Cherryszn-6.JPG"
+            },
+            {
+                title: "pink blades, grey ring",
+                url: "Cherryszn-7.JPG"
+            },
+            {
+                title: "untitled 8",
+                url: "Cherryszn-8.JPG"
+            },
+            {
+                title: "free roam",
+                url: "Cherryszn-9.JPG"
+            },
+            {
+                title: "spontaneous",
+                url: "Cherryszn-10.JPG"
+            },
+            {
+                title: "ihtatb",
+                url: "Cherryszn-11.JPG"
+            },
+            {
+                title: "watching...",
+                url: "Cherryszn-12-1.JPG"
+            },
+            {
+                title: "assessing...",
+                url: "Cherryszn-12-2.JPG"
+            },
+            {
+                title: "framer",
+                url: "Cherryszn-13.JPG"
+            },
+            {
+                title: "corridors",
+                url: "Cherryszn-14.JPG"
+            },
+            {
+                title: "life on mars 1",
+                url: "Cherryszn-15-1.JPG"
+            },
+            {
+                title: "life on mars 2",
+                url: "Cherryszn-15-2.JPG"
+            },
+            {
+                title: "life on mars 3",
+                url: "Cherryszn-15-3.JPG"
+            },
+            {
+                title: "life on mars 4",
+                url: "Cherryszn-15-4.JPG"
+            },
+            {
+                title: "untitled 16",
+                url: "Cherryszn-16.JPG"
+            },
+            {
+                title: "cherry trees",
+                url: "Cherryszn-17.JPG"
+            },
+            {
+                title: "last fell",
+                url: "Cherryszn-18.JPG"
+            },
+            {
+                title: "just another day",
+                url: "Cherryszn-19.JPG"
+            },
+            {
+                title: "out of line",
+                url: "Cherryszn-20.JPG"
+            },
+            {
+                title: "test of time",
+                url: "Cherryszn-21.JPG"
+            },
+
         ]
     },
     {
-        chapter: "Philly in June",
+        title: "holder",
         poster: "F. Wilson",
         date: "1/1/2099",
         folder: "FW-philly-in-june",
-        cover: "Phillyij-1.JPG",
+        url: "Phillyij-5.JPG",
         imageList: [
             {
-                title: "split ends",
+                title: "test",
                 url: "Phillyij-1.JPG"
             },
-            {
-                title: "carnaval",
-                url: "Phillyij-2.JPG"
-            },
-            {
-                title: "wilder st",
-                url: "Phillyij-3.JPG"
-            },
-            {
-                title: "gerritt st",
-                url: "Phillyij-4.JPG"
-            },
-            {
-                title: "sanctuary",
-                url: "Phillyij-5.JPG"
-            },
-            {
-                title: "big rip",
-                url: "Phillyij-6.JPG"
-            },
-            {
-                title: "yard sale",
-                url: "Phillyij-7.JPG"
-            },
-            {
-                title: "if you can keep it",
-                url: "Phillyij-8.JPG"
-            },
-            {
-                title: "alter st 1",
-                url: "Phillyij-9.JPG"
-            },
-            {
-                title: "alter st 2",
-                url: "Phillyij-10.JPG"
-            },
-            {
-                title: "Washington & 7th",
-                url: "Phillyij-11.JPG"
-            },
+            
         ]
     },
     
