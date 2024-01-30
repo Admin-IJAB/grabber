@@ -1,10 +1,14 @@
+import { Link } from "react-router-dom";
+
 export const NavRollout = () => {
     const navOps = ["index", "home", "pics", "mp3s", "notes", "about", "settings"];
 
     const justPickOne = navOps.map((op, idx) => (
-        <li key={idx}><button key={op} className={op} onClick={() => console.log(`${op}-nBtn`)}>
+        <li key={idx}>
+            <Link to={`/${op}`}>
             {op}
-        </button></li>
+            </Link>
+        </li>
     ))
     return (
         <ul className='nav-btns'>
