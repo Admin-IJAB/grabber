@@ -43,6 +43,7 @@ function App() {
               <Route path="/boob/:folder" element={<TestPanels />} />
               <Route path="/about" element={<About />} />
               <Route path="/mp3s/:chapter" element={<AllMp3s />} />
+              <Route path="/pics" element={<AllPics />} />
               <Route path="/pics/:chapter" element={<AllPics />} />
               <Route path="/home" element={<Home />} />
               <Route path="/notes/:chapter" element={<Notes />} />

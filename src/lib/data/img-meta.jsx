@@ -5,6 +5,7 @@ export const imgDataObj = [
         date: "1/1/2099",
         folder: "FW-valle-is-home",
         url: "Valle-12.JPG",
+        refId: "VIH-20",
         imageList: [
             {
                 title: "portal",
@@ -126,6 +127,7 @@ export const imgDataObj = [
         date: "1/1/2099",
         folder: "FW-philly-in-june",
         url: "Phillyij-1.JPG",
+        refId: "PIJ-21",
         imageList: [
             {
                 title: "split ends",
@@ -179,6 +181,7 @@ export const imgDataObj = [
         date: "1/1/2099",
         folder: "FW-georges-garage",
         url: "Gsgarage-3.JPG",
+        refId: "GG-21",
         imageList: [
             {
                 title: "spectator 1",
@@ -217,6 +220,7 @@ export const imgDataObj = [
         date: "1/1/2099",
         folder: "FW-cherry-season",
         url: "Cherryszn-4-10.JPG",
+        refId: "CS-21",
         imageList: [
             {
                 title: "barges",
@@ -363,6 +367,7 @@ export const imgDataObj = [
         date: "1/1/2099",
         folder: "FW-philly-in-june",
         url: "Phillyij-5.JPG",
+        refId: "TEST-99",
         imageList: [
             {
                 title: "test",
