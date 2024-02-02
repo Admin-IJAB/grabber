@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 
-import './App.css'
+import './lib/styles/App.css'
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
 import { About, AllMp3s, AllPics, Home, Notes, Settings } from './lib/pages/_index.jsx'
@@ -15,8 +15,7 @@ function App() {
             {/* tests */}
               <Route path="/" element={<Home />} />
               <Route path="/index" element={<Home />} />
-              {/* <Route path="/test" element={<LoadAllChapters />} />
-              <Route path="/boob" element={<TestPanels />} />
+              {/* <Route path="/boob" element={<TestPanels />} />
               <Route path="/boob/:folder" element={<TestPanels />} /> */}
 
             {/* nav routes */}

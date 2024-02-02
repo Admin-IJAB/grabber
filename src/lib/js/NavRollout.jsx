@@ -1,14 +1,7 @@
 import { Link } from "react-router-dom";
 import reactLogo from '../react.svg'
 
-const navOps = ["index", "home", "pics", "mp3s", "notes", "about", "settings"];
-const justPickOne = navOps.map((op, idx) => (
-    <li key={idx}>
-        <Link to={`/${op}`}>
-            {op}
-        </Link>
-    </li>
-))
+import { JustPickOne } from "./NavOptions";
 
 export const NavRollout = () => {
     
@@ -18,7 +11,7 @@ export const NavRollout = () => {
                 <img src={reactLogo} className="logo react" alt="React logo" />
             </a>
             <ul className='nav-btns'>
-                {justPickOne}
+                <JustPickOne />
             </ul>
         </div>
     )
