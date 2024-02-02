@@ -60,7 +60,7 @@ export const AllPics = () => {
         }
         const currentPannels = loadedChapter.map((item, idx) => (
             <Link key={"pic" + idx} to={`/pics/${item.refId}`}>
-                <article className="panel-card">
+            <article className="panel-card">
                 
                 {loadPrvw(item.url, item.folder)}
                 <p className="panel-title">{item.title}</p>
