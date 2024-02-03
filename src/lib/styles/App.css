@@ -96,3 +96,41 @@ li::marker {
   margin: 0px;
   font-size: 1.4em;
 }
+
+
+/* Modal */
+.mode-test {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.mode-test-1 {
+  position: fixed;
+  inset: 0;
+
+}
+
+.mode-test-2 {
+  position: fixed;
+  inset: 0;
+  overflow-y: auto;
+}
+
+.mode-test-3 {
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.mode-in-btn {
+  border-radius: 15px;
+  background-color: grey;
+  color: white;
+  padding: 20px;
+}

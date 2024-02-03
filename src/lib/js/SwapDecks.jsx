@@ -1,5 +1,6 @@
 import { Link, useParams } from "react-router-dom";
 import { imgDataObj } from "../data/img-meta";
+import { HeroFocus } from "./HeroFocus";
 
 
 
@@ -30,7 +31,7 @@ const loadPrvw = (fileName, chapter, pId) => {
         );
     }
 
-    const swapChapter = (cName) => {
+const swapChapter = (cName) => {
         const myNewChaps = imgDataObj.find((ch) => ch.refId == cName)
         console.log(myNewChaps.imageList)
         let items = myNewChaps.imageList.map((chptr, idx) => (

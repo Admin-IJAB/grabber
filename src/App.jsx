@@ -4,6 +4,7 @@ import './lib/styles/App.css'
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
 import { About, AllMp3s, AllPics, Home, Notes, Settings } from './lib/pages/_index.jsx'
+import { HeroFocus } from './lib/js/HeroFocus';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavRollout />
       <div className="card-deck">
         <h1>Grabber</h1>
+        <HeroFocus />
           <Routes>
             {/* tests */}
               <Route path="/" element={<Home />} />
