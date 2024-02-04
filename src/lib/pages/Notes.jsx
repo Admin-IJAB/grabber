@@ -1,5 +1,9 @@
+import { NotesRollout } from "../js/NotesRollout"
+
 export const Notes = () => {
     return (
-        <h2>notes page</h2>
+        <>
+            <NotesRollout />
+        </>
     )
 }

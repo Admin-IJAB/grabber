@@ -1,6 +1,4 @@
 import { Link } from "react-router-dom";
-import reactLogo from '../react.svg'
-
 import { JustPickOne } from "./NavOptions";
 
 const navLogoSrc = "../../public/icons/bblogo1.png"
