@@ -5,8 +5,7 @@
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
+  height: 10em;
   will-change: filter;
   transition: filter 300ms;
 }
@@ -72,35 +71,53 @@
 }
 
 .nav-btns {
-  
+  margin: 0;
   display: flex;
   flex-direction: column;
 }
 
 .nav-btns > li {
-  margin: 5px;
-  /* padding: 5px;  */
-  text-align: left;
-  list-style: arabic-indic;
+    padding: 5px;
+    text-align: left;
+    list-style: arabic-indic;
+    background-color: azure;
+    /* border: 1px black solid; */
 }
 
-.nav-btns > li > button {
+.nav-btns > li:hover {
+  background-color: rgb(90, 226, 226);
+  text-align: right;
+}
+
+/* .nav-btns > li > button {
   background-color: whitesmoke;
   border-bottom-left-radius: 20px;
   width: 70%;
   margin-left: 20px;
-}
+} */
 
 li::marker {
   padding: 0px;
-  margin: 0px;
-  font-size: 1.4em;
+    margin: 0px;
+    font-size: 1.8em;
+    color: azure;
+    font-weight: bold;
+}
+
+.nav-links {
+  text-transform: capitalize;
+  color: black;
 }
 
 
 /* Modal */
+.open-dialog {
+  position: relative;
+  z-index: 10;
+}
+
 .mode-test {
-  position: fixed;
+  /* position: fixed; */
   inset: 0;
   display: flex;
   align-items: center;
@@ -126,6 +143,12 @@ li::marker {
   align-items: center;
   justify-content: center;
   text-align: center;
+  background-color: rgba(0, 0, 255, 0.181);
+}
+
+.mode-test-3 > div {
+  background-color: white;
+  padding: 10px;
 }
 
 .mode-in-btn {

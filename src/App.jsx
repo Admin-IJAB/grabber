@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom'
-
+import { useEffect } from 'react';
 import './lib/styles/App.css'
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
@@ -7,12 +7,17 @@ import { About, AllMp3s, AllPics, Home, Notes, Settings } from './lib/pages/_ind
 import { HeroFocus } from './lib/js/HeroFocus';
 
 function App() {
+
+  useEffect(() => {
+    document.title = "burnthis.space"
+  }, []);
+
   return (
     <>
       <NavRollout />
       <div className="card-deck">
-        <h1>Grabber</h1>
-        <HeroFocus />
+        <h1>https://burnthis.space</h1>
+        {/* <HeroFocus /> */}
           <Routes>
             {/* tests */}
               <Route path="/" element={<Home />} />

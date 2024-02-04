@@ -44,7 +44,7 @@ const swapChapter = (cName) => {
             }
         ))
         return items;
-    }
+}
 
 export const SwapDecks = () => {
     let paramId = useParams().chapter;
@@ -63,6 +63,12 @@ export const SwapDecks = () => {
                 {loadPrvw(item.url, item.folder, paramId)}
                 <p className="panel-title">{item.title}</p>
                 <p>{item.url}</p>
+                <HeroFocus 
+                title={item.title}
+                path={item.url}
+                folder={item.folder}
+                refId={paramId}
+                />
             </article>
             </Link>
         ))
