@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './lib/styles/App.css'
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
-import { About, AllMp3s, AllPics, Home, Notes, Settings } from './lib/pages/_index.jsx'
+import { About, AllMp3s, AllPics, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
 import { HeroFocus } from './lib/js/HeroFocus';
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
           <Routes>
             {/* tests */}
               <Route path="/" element={<Home />} />
-              <Route path="/index" element={<Home />} />
+              <Route path="/index" element={<IndexPage />} />
               {/* <Route path="/boob" element={<TestPanels />} />
               <Route path="/boob/:folder" element={<TestPanels />} /> */}
 

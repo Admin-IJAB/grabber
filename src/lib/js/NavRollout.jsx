@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { JustPickOne } from "./NavOptions";
 
-const navLogoSrc = "../../public/icons/bblogo1.png"
+const navLogoSrc = "../../icons/bblogo1.png"
 
 export const NavRollout = () => {
     

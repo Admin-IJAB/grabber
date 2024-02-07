@@ -4,5 +4,6 @@ import { AllPics } from './AllPics.jsx'
 import { Home } from './Home.jsx'
 import { Notes } from './Notes.jsx'
 import { Settings } from './Settings.jsx'
+import { IndexPage } from './indexPage.jsx'
 
-export { About, AllMp3s, AllPics, Home, Notes, Settings };
+export { About, AllMp3s, AllPics, Home, Notes, Settings, IndexPage };
