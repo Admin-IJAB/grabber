@@ -716,7 +716,6 @@ export const sketches = [
             },  
         ]
     },
-    
     {
         title: 'S&OFV1',
         artist: 'L. Mauro',

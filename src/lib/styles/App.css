@@ -48,7 +48,7 @@
   flex-wrap: wrap;
   /* justify-content: center; */
   justify-content: center;
-  margin-left: 30px;
+  margin: 0 30px;
 }
 
 .panel-card {
@@ -204,4 +204,48 @@ li::marker {
 
 .song-row > span {
   margin: 0 auto;
+}
+
+
+/* ARTIcle */
+.article-card {
+  background-color: aquamarine;
+  width: 50%;
+  width: 45%;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+
+.article-info {
+  /* font-style: italic; */
+  font-weight: 700;
+  display: inline-block;
+  /* vertical-align: top; */
+  margin-left: 10px;
+}
+
+.article-para {
+  margin: 0;
+  font-style: italic;
+
+}
+
+
+/*  */
+/* tests */
+/*  */
+
+.tst-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.tst-panel > img {
+  width: 100px;
+  height: 100px;
+}
+
+.tst-panel > span {
+  font-size: 10px;
 }
