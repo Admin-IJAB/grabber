@@ -1,6 +1,6 @@
 import { sketches } from "../data/mp3-data"
 
-const testImport = sketches[6ç];
+const testImport = sketches[6];
 const picHold = "../../../assets/imgs/FW-valle-is-home/Valle-12.JPG";
 
 const testRollout = testImport.trackList.map((track, idx) => (

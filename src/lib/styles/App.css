@@ -82,6 +82,8 @@
 .nav-deck {
   background-color: palegreen;
   height: 100vh;
+  position: sticky;
+  top: 0;
 }
 
 .nav-btns {
@@ -229,6 +231,54 @@ li::marker {
   margin: 0;
   font-style: italic;
 
+}
+
+
+/* history box */
+
+.hist-box {
+  /* border: 1px solid black; */
+  margin:  20px 20px 0 5px;
+  padding: 5px;
+  background-color: azure;
+  height: 39vh;
+}
+
+.hist-box > p {
+  justify-content: left;
+  font-weight: bold;
+}
+
+.hist-box > div {
+  text-align: left;
+}
+
+.hist-box > div > p {
+  font-style: italic;
+}
+
+.hist-pic {
+  height: 50px;
+  border: 5px groove gold;
+}
+
+.pop-btn {
+  background-color: lime;
+}
+
+.pop-cont {
+  position: relative;
+  width: 100vw;
+  text-align: left;
+}
+
+.pop-panel {
+  position: fixed;
+  
+  display:block;
+  z-index: 10;
+  height: 10px;
+  background-color: purple;
 }
 
 

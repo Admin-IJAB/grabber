@@ -6,6 +6,8 @@ import { NavRollout } from './lib/js/NavRollout.jsx';
 import { About, AllMp3s, AllPics, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
 import { HeroFocus } from './lib/js/HeroFocus';
 
+import { ShowHistPlayer } from './lib/js/showHistPlayer.jsx';
+
 function App() {
 
   useEffect(() => {
@@ -16,6 +18,7 @@ function App() {
     <>
       <NavRollout />
       <div className="card-deck">
+        <ShowHistPlayer />
         <h1>https://burnthis.space</h1>
         {/* <HeroFocus /> */}
           <Routes>
