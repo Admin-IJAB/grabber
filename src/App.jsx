@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { useEffect } from 'react';
-import './lib/styles/App.css'
+import './lib/styles/App.css';
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
 import { About, AllMp3s, AllPics, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
