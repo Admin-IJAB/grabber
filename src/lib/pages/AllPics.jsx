@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { SwapDecks } from "../js/SwapDecks";
+import "../styles/pics.css"
 
 
 export const AllPics = () => {

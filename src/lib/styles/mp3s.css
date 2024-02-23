@@ -1,0 +1,25 @@
+.song-row {
+    display: grid;
+    grid-template-columns: .5fr 1fr 2fr 2.5fr 1fr 1fr 1.5fr 1fr 1fr;
+    align-items: left;
+    font-size: 10px;
+}
+  
+#StTme {
+    color: purple;
+    font-weight: bolder;
+    font-family: cursive;
+    background-color: black;
+    font-size: 25px;
+    text-shadow: 1px 1px 1px white;
+}
+.song-row:nth-child(even) {
+    background-color: rgb(162, 201, 210);
+}
+.song-row:nth-child(odd) {
+    background-color: rgb(224, 222, 222);
+}
+  
+.song-row > span {
+    margin: 0 auto;
+}

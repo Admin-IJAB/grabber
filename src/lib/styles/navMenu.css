@@ -1,0 +1,52 @@
+.logo {
+    height: 10em;
+    will-change: filter;
+    transition: filter 300ms;
+}
+.logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+    filter: drop-shadow(0 0 2em #fb6161aa);
+}
+
+.nav-deck {
+    background-color: palegreen;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+  
+.nav-btns {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+  
+.nav-btns > li {
+      padding: 5px;
+      text-align: left;
+      list-style: arabic-indic;
+      background-color: azure;
+      /* border: 1px black solid; */
+}
+  
+.nav-btns > li:hover {
+    background-color: rgb(90, 226, 226);
+    cursor: pointer;
+    /* text-align: right; */
+}
+  
+  
+li::marker {
+    padding: 0px;
+      margin: 0px;
+      font-size: 1.8em;
+      color: azure;
+      font-weight: bold;
+}
+  
+.nav-links {
+    text-transform: capitalize;
+    color: black;
+}

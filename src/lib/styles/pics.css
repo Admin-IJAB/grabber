@@ -1,0 +1,36 @@
+.card-deck {
+    background-color: azure;
+    color: black;
+    position: relative;
+  }
+  
+  
+  .panel-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+  }
+  
+  .panel-card {
+    background-color: aquamarine;
+    padding: 1em;
+    margin: 15px;
+  
+  }
+  
+  .panel-card:hover {
+    border-radius: 7px;
+    cursor: alias;
+    /* background-color: aquamarine; */
+    box-shadow: 0px 5px 10px black;
+  }
+  
+  .img-prvw {
+    height: 150px;
+    
+  }
+  
+  .panel-title {
+    font-weight: 800;
+  }

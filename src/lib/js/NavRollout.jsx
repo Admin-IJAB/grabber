@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { JustPickOne } from "./NavOptions";
+import "../styles/navMenu.css"
 
 const navLogoSrc = "../../icons/bblogo1.png"
 

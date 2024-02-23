@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import './lib/styles/App.css';
 
 import { NavRollout } from './lib/js/NavRollout.jsx';
-import { About, AllMp3s, AllPics, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
+import { Articles, Inspo, AllMp3s, AllPics, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
 import { HeroFocus } from './lib/js/HeroFocus';
 
 import { ShowHistPlayer } from './lib/js/showHistPlayer.jsx';
@@ -29,7 +29,8 @@ function App() {
               <Route path="/boob/:folder" element={<TestPanels />} /> */}
 
             {/* nav routes */}
-              <Route path="/about" element={<About />} />
+              <Route path="/articles" element={<Articles />} />
+              <Route path="/inspo" element={<Inspo />} />
               <Route path="/mp3s/" element={<AllMp3s />} />
               <Route path="/mp3s/:chapter" element={<AllMp3s />} />
               <Route path="/pics" element={<AllPics />} />

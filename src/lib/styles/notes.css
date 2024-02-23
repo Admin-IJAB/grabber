@@ -1,0 +1,13 @@
+.note-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 30px;
+}
+  
+.note-item {
+    width: 35vw;
+    border: 2px double black;
+    margin: 5px;
+    padding: 5px
+}

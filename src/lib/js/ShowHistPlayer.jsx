@@ -1,6 +1,6 @@
 import { Popover } from "@headlessui/react";
 import { useState, useEffect } from "react";
-import '../styles/history.css'
+import '../styles/historyMod.css'
 
 export const ShowHistPlayer = () => {
 

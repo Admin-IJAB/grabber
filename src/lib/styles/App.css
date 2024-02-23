@@ -4,17 +4,7 @@
   grid-template-columns: 1fr 6fr;
 }
 
-.logo {
-  height: 10em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 @keyframes logo-spin {
   from {
@@ -32,99 +22,8 @@
 }
 
 
-
 /*  */
-/* CARD deck */
-/*  */
-.card-deck {
-  background-color: azure;
-  color: black;
-  position: relative;
-}
-
-
-.panel-box {
-  display: flex;
-  /* width: 90%; */
-  flex-wrap: wrap;
-  /* justify-content: center; */
-  justify-content: center;
-  margin: 0 30px;
-}
-
-.panel-card {
-  background-color: aquamarine;
-  padding: 1em;
-  margin: 15px;
-  /* height: 150px;
-  width: 150px; */
-}
-
-.panel-card:hover {
-  border-radius: 7px;
-  cursor: alias;
-  /* background-color: aquamarine; */
-  box-shadow: 0px 5px 10px black;
-}
-
-.img-prvw {
-  height: 150px;
-  
-}
-
-.panel-title {
-  font-weight: 800;
-}
-
-
-/*  */
-/* NAV styles */
-/*  */
-.nav-deck {
-  background-color: palegreen;
-  height: 100vh;
-  position: sticky;
-  top: 0;
-}
-
-.nav-btns {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.nav-btns > li {
-    padding: 5px;
-    text-align: left;
-    list-style: arabic-indic;
-    background-color: azure;
-    /* border: 1px black solid; */
-}
-
-.nav-btns > li:hover {
-  background-color: rgb(90, 226, 226);
-  cursor: pointer;
-  /* text-align: right; */
-}
-
-
-li::marker {
-  padding: 0px;
-    margin: 0px;
-    font-size: 1.8em;
-    color: azure;
-    font-weight: bold;
-}
-
-.nav-links {
-  text-transform: capitalize;
-  color: black;
-}
-
-
-
-/*  */
-/* Modal */
+/* Preview Modal */
 /*  */
 .open-dialog {
   position: relative;
@@ -173,41 +72,14 @@ li::marker {
   padding: 20px;
 }
 
-.note-item {
-  /* display: flex; */
-  border: 2px double black;
-}
+
 
 
 
 /*  */
 /* SONG view */
 /*  */
-.song-row {
-  display: grid;
-  grid-template-columns: .5fr 1fr 2fr 2.5fr 1fr 1fr 1.5fr 1fr 1fr;
-  align-items: left;
-  font-size: 10px;
-}
 
-#StTme {
-  color: purple;
-  font-weight: bolder;
-  font-family: cursive;
-  background-color: black;
-  font-size: 25px;
-  text-shadow: 1px 1px 1px white;
-}
-.song-row:nth-child(even) {
-  background-color: rgb(162, 201, 210);
-}
-.song-row:nth-child(odd) {
-  background-color: rgb(224, 222, 222);
-}
-
-.song-row > span {
-  margin: 0 auto;
-}
 
 
 /* ARTIcle */
@@ -233,11 +105,6 @@ li::marker {
   font-style: italic;
 
 }
-
-
-/* history box */
-
-
 
 
 /*  */
