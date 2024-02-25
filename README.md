@@ -57,9 +57,9 @@ div, .card-deck
 #### Articles
 a cary-over/upgrade of marblefreedomtrust.us
 
-div, .card-deck
-    div, .news-box
-        article, artcl-panel, [...]
+- div, .card-deck
+- - div, .news-box
+- - - article, artcl-panel, [...]
 
 #### Inspo
 a collection of different things that inspire us, displayed in album view

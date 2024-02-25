@@ -1,7 +1,54 @@
+.news-box {
+    display: flex;
+    flex-direction: column;
+}
+
 .artcl-panel {
-    border: 2px solid black;
+    border: 10px groove azure;
+    padding: 30px;
+    margin: 10px 50px;
+    background-color: floralwhite
 }
 
 .artcl-panel > span {
-    border-bottom: 1px solid black;
+    /* border-left: 10px double black; */
+    /* font-weight: 700; */
+}
+
+.artcl-ttl {
+    font-family: serif;
+    font-size: 2em;
+    margin: 5px;
+}
+
+.artcl-wri {
+    font-style: italic;
+}
+
+.artcl-pub {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: monospace;
+    /* margin-right: 20px */
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.artcl-dte {
+    /* font-weight: 700; */
+    font-size: .75em;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.artcl-bdy {
+    font-size: 1.4em;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    margin-top: 0;
+}
+
+.artcl-bdy::before {
+    content: '*';
+    font-size: 3em;
 }

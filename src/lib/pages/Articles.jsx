@@ -3,11 +3,12 @@ import "../styles/articles.css"
 
 const articlePanels = newsArts.map((artcl, idx) => (
     <article key={idx} className="artcl-panel">
-        <p>*{artcl.title}*</p>
-        <p>BY: {artcl.author}</p>
-        <p>{artcl.source}</p>
-        <p>{artcl.date}</p>
-        <p>{artcl.body}</p>
+        <p className="artcl-ttl">&ldquo;{artcl.title}&rdquo;</p>
+        <p className="artcl-wri">{artcl.author}</p>
+        <p className="artcl-pub">{artcl.source}</p>
+
+        <span className="artcl-dte">{artcl.date}</span>
+        <p className="artcl-bdy">{artcl.body}</p>
     </article>
 ))
 export const Articles = () => {
