@@ -19,17 +19,17 @@ const songView = () => {
 
 
     sketches.map((album, i) => {
-        album.trackList.map((track, ii) => ((
+        album.itemList.map((track, ii) => ((
             iTunes.push({
                 alTitle: album.title,
-                alArtist: album.artist,
-                alArtUrl: album.artLink,
-                trTitle: track.track,
+                alArtist: album.author,
+                alArtUrl: album.artUrl,
+                trTitle: track.name,
                 trLength: track.length,
-                trFile: track.fileName,
+                trFile: track.ogFile,
                 refId: ii,
-                trDate: track.date,
-                trTime: track.started,
+                trDate: track.startDt,
+                trTime: track.startTm,
             })
         )))
     })

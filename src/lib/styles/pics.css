@@ -5,18 +5,22 @@
   }
   
   
-  .panel-box {
+  .panel-box, .panel-sec {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: left;
     margin: 0 30px;
   }
   
-  .panel-card {
-    background-color: aquamarine;
-    padding: 1em;
-    margin: 15px;
-  
+  .panel-card, .item-frame {
+    /* background-color: aquamarine; */
+    padding: 5px;
+    margin: 5px;
+    border-bottom: 4px double lightsteelblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 3%;
+    border-top-right-radius: 3px;
   }
   
   .panel-card:hover {
@@ -25,12 +29,39 @@
     /* background-color: aquamarine; */
     box-shadow: 0px 5px 10px black;
   }
+
+  .item-frame > img:hover {
+    cursor: alias;
+    box-shadow: 0px 50px 50px black;
+  }
   
-  .img-prvw {
-    height: 150px;
+  .img-prvw, .item-frame > img {
+    height: 200px;
+    width: 200px;
+    display: block;
     
   }
   
-  .panel-title {
+  .panel-title, .pnl-ttl {
     font-weight: 800;
+    margin: 0;
+    padding: 0;
   }
+
+  .pnl-auth {
+    margin: 0;
+    padding: 0;
+  }
+
+  .item-frame > span {
+    padding: 0 3px;
+    color: grey;
+    font-style: italic;
+    font-size: .7em;
+  }
+
+  .item-list {
+    display: none;
+  }
+
+  
