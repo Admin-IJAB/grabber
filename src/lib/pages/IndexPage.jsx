@@ -64,17 +64,39 @@ export const AllPanels = () => {
 }
 
 export const AllRows = () => {
+    let header = [
+        {
+        refId: "#",
+        alTitle: "Album",
+        alArtist: "Artist",
+        alArtUrl: "URL",
+        trTitle: "Title",
+        trLength: "Length",
+        trFile: "File",
+        },
+    ];
+    let iTunes = header.concat(testImport);
+    console.log(iTunes)
+    
     return (
         <section>
             {testImport.map((chapter, idx) => {
                 return (
-                <div className="row-box">
-                        {chapter.itemList.map((item, idx) => {
+                <div className="row-box" key={chapter.title + idx}>
+                <article className="song-row" key={"header-box"}>
+                    <span>#</span>
+                    <span>chapter</span>
+                    <span>srcUrl</span>
+                    <span>author</span>
+                    <span>title</span>
+                    <span>url</span>
+                    <span>length</span>
+                </article>
+                        {chapter.itemList.map((item, iidx) => {
                             return (
-                                <article className="song-row" key={chapter.title}>
-                                    <span>{idx+1}</span>
+                                <article className="song-row" key={item.name + iidx}>
+                                    <span>{iidx+1}</span>
                                     <span>{chapter.title}</span>
-                                    <span>{chapter.postDt}</span>
                                     <span>{chapter.srcUrl}</span>
                                     <span>{chapter.authSh}</span>
                                     <span>{item.name}</span>

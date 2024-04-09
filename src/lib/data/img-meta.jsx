@@ -5,7 +5,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-valle-is-home",
-        artUrl: "xxtra8.JPG",
+        artUrl: "xxtra1.png",
         srcUrl: "VIH-20",
         media: "photo",
         itemList: [
@@ -226,7 +226,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-cherry-season",
-        artUrl: "xxtra15.JPG",
+        artUrl: "xxtra3.png",
         srcUrl: "CS-21",
         media: "photo",
         itemList: [
