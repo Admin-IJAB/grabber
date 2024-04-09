@@ -5,7 +5,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-valle-is-home",
-        artUrl: "Valle-12.JPG",
+        artUrl: "xxtra8.JPG",
         srcUrl: "VIH-20",
         media: "photo",
         itemList: [
@@ -129,7 +129,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-philly-in-june",
-        artUrl: "Phillyij-1.JPG",
+        artUrl: "xxtra13.png",
         srcUrl: "PIJ-21",
         media: "photo",
         itemList: [
@@ -185,7 +185,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-georges-garage",
-        artUrl: "Gsgarage-3.JPG",
+        artUrl: "xxtra5.JPG",
         srcUrl: "GG-21",
         media: "photo",
         itemList: [
@@ -226,7 +226,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-cherry-season",
-        artUrl: "Cherryszn-4-10.JPG",
+        artUrl: "xxtra15.JPG",
         srcUrl: "CS-21",
         media: "photo",
         itemList: [
@@ -375,7 +375,7 @@ export const imgDataObj = [
         author: "F. Wilson",
         postDt: "1/1/2099",
         folder: "FW-philly-in-june",
-        artUrl: "Phillyij-5.JPG",
+        artUrl: "xxtra11.jpg",
         srcUrl: "TEST-99",
         media: "photo",
         itemList: [

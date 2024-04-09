@@ -37,11 +37,12 @@ export const AllPanels = () => {
                     <div className="item-frame" key={chapter.title} onClick={() => {hideShowPnlLst(true)}}>
                         <span>{chapter.postDt}</span>
                         <span>{chapter.srcUrl}</span>
-                        <img src={ chapter.media === "photo" ? 
+                        {/* <img src={ chapter.media === "photo" ? 
                             `../../../assets/imgs/${chapter.folder}/${chapter.artUrl}`
                             :
                             `https://raw.githubusercontent.com/ForestW70/sketches-bcc-client/main/assets/images/${chapter.artUrl}`
-                        }></img>
+                        }></img> */}
+                        <img src={`../../../assets/icons/${chapter.artUrl}`}></img>
                         <h2 className="pnl-ttl">{chapter.title}</h2>
                         <h3 className="pnl-auth">{chapter.authSh}</h3>
                         <div className="item-list">

@@ -5,7 +5,8 @@ export const sketches = [
         authSh: 'S. Finder',
         author: 'Stud Finder',
         postDt: '10/10/2022',
-        artUrl: 'Studs.png',
+        folder: "2022_SF-STUDS",
+        artUrl: 'aa_sf_studs.png',
         srcUrl: 'sf-studs1',
         media: "music",
         itemList: [
@@ -151,7 +152,8 @@ export const sketches = [
         authSh: 'L. Mauro',
         author: 'Lukasz Mauro',
         postDt: '11/08/2022',
-        artUrl: 'unredacted.png',
+        folder: "2022_LM-RDCTR",
+        artUrl: 'aa_lm_rdctr.png',
         srcUrl: 'lm-rdkter',
         media: "music",
         itemList: [
@@ -261,7 +263,8 @@ export const sketches = [
         authSh: 'L. Mauro',
         author: 'Lukasz Mauro',
         postDt: '11/21/2021',
-        artUrl: 'bcc.png',
+        folder: "2021_LM-BCC",
+        artUrl: 'aa_lm_bcc.png',
         srcUrl: 'lm-bcc',
         media: "music",
         itemList: [
@@ -425,7 +428,8 @@ export const sketches = [
         authSh: 'S. Finder',
         author: 'Stud Finder',
         postDt: '1/10/2021',
-        artUrl: 'brch.png',
+        folder: "2021_SF-BR",
+        artUrl: 'aa_sf_brch.png',
         srcUrl: 'sf-brch',
         media: "music",
         itemList: [
@@ -454,7 +458,8 @@ export const sketches = [
         authSh: "S. Finder",
         author: "Stud Finder",
         postDt: "5/17/2019",
-        artUrl: "ll.png",
+        folder: "2019_SF-LL",
+        artUrl: "aa_sf_ll.png",
         srcUrl: 'sf-ll',
         media: "music",
         itemList: [
@@ -591,7 +596,8 @@ export const sketches = [
         authSh: 'S. Finder',
         author: 'Stud Finder',
         postDt: '10/9/2018',
-        artUrl: 'hmp.png',
+        folder: "2018_SF-HMP",
+        artUrl: 'aa_sf_hmp.png',
         srcUrl: 'sf-hmp',
         media: "music",
         itemList: [
@@ -728,7 +734,8 @@ export const sketches = [
         authSh: 'L. Mauro',
         author: 'Lukasz Mauro',
         postDt: '8/28/2017',
-        artUrl: 's&ofv1.jpg',
+        folder: "2017_LM-SAOFV1",
+        artUrl: 'aa_lm_saofv1.jpg',
         srcUrl: 'lm-fail1',
         media: "music",
         itemList: [
@@ -803,7 +810,8 @@ export const sketches = [
         authSh: 'con',
         author: 'con',
         postDt: '4/4/2014',
-        artUrl: 'ib.jpg',
+        folder: "2014_CN-IB",
+        artUrl: 'aa_cn_ib.jpg',
         srcUrl: 'cn-ib',
         media: "music",
         itemList: [
@@ -853,7 +861,8 @@ export const lilExtras = [
         authSh: 'L. Mauro',
         author: 'Lukasz Mauro',
         postDt: 'N/A',
-        artUrl: 'ect.png',
+        folder: "2021_LM-ECT",
+        artUrl: 'aa_lm_ect.png',
         srcUrl: 'lm-ect',
         media: "music",
         itemList: [
@@ -922,6 +931,45 @@ export const lilExtras = [
             },
         ]
     },
+    {
+        title: "BRSSF",
+        authSh: "Burner B",
+        author: "DJ Burna B",
+        postDt: "9/30/2018",
+        folder: "2018_DJBB-PODS",
+        artUrl: "aa_djbb_pods.jpg",
+        srcUrl: 'bb-pod1',
+        media: "music",
+        itemList: [
+            {
+            name: 'Soundscape Source Feed vol. 1',
+            length: "33:33",
+            url: 'pod1-198',
+            ogFile: 'brssfv1',
+            daw: 'FLstudio',
+            startDt: '09-30-18',
+            startTm: '--',
+        },
+        {
+            name: 'Soundscape Source Feed vol. 2',
+            length: "55:08",
+            url: 'pod2-112',
+            ogFile: 'brssfv2',
+            daw: 'FLstudio',
+            startDt: '12-26-18',
+            startTm: '--',
+        },
+        {
+            name: 'Soundscape Source Feed vol. 3',
+            length: "40:27",
+            url: 'pod3-160',
+            ogFile: 'brssfv3',
+            daw: 'FLstudio',
+            startDt: '03-01-19',
+            startTm: '--',
+        }
+        ]
+    }
 ]
 
 export const pods = [
@@ -930,7 +978,8 @@ export const pods = [
         authSh: "Burner B",
         author: "DJ Burna B",
         postDt: "9/30/2018",
-        artUrl: "pods.jpg",
+        folder: "2018_DJBB-PODS",
+        artUrl: "aa_djbb_pods.jpg",
         srcUrl: 'bb-pod1',
         media: "music",
         itemList: [
@@ -975,6 +1024,7 @@ export const shhhhhdontsnitch = [
         authSh: 'Not Us',
         author: 'Definitly not us',
         postDt: 'N/A',
+        folder: "",
         artUrl: 'alf.jpg',
         srcUrl: 'gy-alf',
         media: "music",
@@ -1142,6 +1192,7 @@ export const powerfulSophie = [
         authSh: 'Sophie',
         author: 'Sophie Xeon',
         postDt: 'N/A',
+        folder: "",
         artUrl: 'twia.jpg',
         srcUrl: 'sx-powerful',
         media: "music",
