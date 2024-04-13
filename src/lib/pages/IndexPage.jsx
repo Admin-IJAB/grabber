@@ -22,7 +22,7 @@ export const AllPanels = () => {
                         }></img> */}
                         <img src={`../../../assets/icons/${chapter.artUrl}`}></img>
                         <h2 className="pnl-ttl">{chapter.title}</h2>
-                        <h3 className="pnl-auth">{chapter.authSh}</h3>
+                        <h3 className="pnl-auth">{chapter.author}</h3>
                         <div className="item-list">
                             {chapter.itemList.map((item, idx) => {
                                 return (
@@ -70,7 +70,6 @@ export const AllRows = () => {
         </>
     )
 }
-
 
 
 export const IndexPage = () => {

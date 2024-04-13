@@ -4,6 +4,10 @@
     position: relative;
     z-index: -1;
   }
+
+  /* .card-deck > * {
+    z-index: 1;
+  } */
   
   
   .panel-box, .panel-sec {
@@ -11,6 +15,7 @@
     flex-wrap: wrap;
     justify-content: left;
     margin: 0 30px;
+    z-index: 5;
   }
   
   .panel-card, .item-frame {
@@ -37,21 +42,26 @@
   }
   
   .img-prvw, .item-frame > img {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     display: block;
-    
+    margin: 5px;
   }
   
   .panel-title, .pnl-ttl {
+    font-size: 1em;
     font-weight: 800;
     margin: 0;
     padding: 0;
+    padding-left: 10px;
   }
 
   .pnl-auth {
+    font-size: .75em;
     margin: 0;
     padding: 0;
+    color: grey;
+    padding-left: 10px;
   }
 
   .item-frame > span {
