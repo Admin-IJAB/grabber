@@ -18,7 +18,7 @@ function App() {
     <>
       <NavRollout />
       <div className="card-deck">
-        <ShowHistPlayer />
+        {/* <ShowHistPlayer /> */}
         <h1>https://burnthis.space</h1>
         {/* <HeroFocus /> */}
           <Routes>

@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import { JustPickOne } from "./NavOptions";
+import { ShowHistPlayer } from "./ShowHistPlayer";
 import "../styles/navMenu.css"
 
-const navLogoSrc = "../../icons/bblogo1.png"
+const navLogoSrc = "../../assets/icons/icon_bbb-red.png"
 
 // const historyBox = 
 export const NavRollout = () => {
@@ -15,7 +16,9 @@ export const NavRollout = () => {
             <ul className='nav-btns'>
                 <JustPickOne />
             </ul>
-            
+            <div>
+                <ShowHistPlayer />
+            </div>
         </div>
     )
 }

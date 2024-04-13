@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 import { sketches } from "../data/mp3-data"
-import "../styles/mp3s.css";
+import "../styles/disp-rows.css";
 
 const songView = () => {
     let iTunes = [
