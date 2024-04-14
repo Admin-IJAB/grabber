@@ -1,4 +1,4 @@
-import { newsArts } from "../data/article-data"
+import { newsArts } from "../data/article-meta"
 import "../styles/articles.css"
 
 const articlePanels = newsArts.map((artcl, idx) => (
