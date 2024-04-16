@@ -7,7 +7,7 @@
     font-family: serif;
 }
   
-#StTme, #rowHeader {
+#rowHeader {
     color: purple;
     font-weight: bolder;
     font-family: cursive;
@@ -26,4 +26,9 @@
     margin: 0 auto;
     align-self: left;
     /* display: flex; */
+}
+
+.song-row:hover {
+    background-color: pink;
+    cursor: pointer;
 }

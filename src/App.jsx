@@ -5,6 +5,7 @@ import './lib/styles/App.css';
 import { NavRollout } from './lib/js/NavRollout.jsx';
 import { Articles, Inspo, AllRows, AllPanels, Home, Notes, Settings, IndexPage } from './lib/pages/_index.jsx'
 import { HeroFocus } from './lib/js/HeroFocus';
+import { SingleFocusMusic, SingleFocusPhoto } from './lib/pages/ItemFocus.jsx';
 
 import { ShowHistPlayer } from './lib/js/showHistPlayer.jsx';
 
@@ -25,8 +26,9 @@ function App() {
             {/* tests */}
               <Route path="/" element={<Home />} />
               <Route path="/index" element={<IndexPage />} />
-              {/* <Route path="/boob" element={<TestPanels />} />
-              <Route path="/boob/:folder" element={<TestPanels />} /> */}
+              <Route path="/index/photo/:albID(/:srcID)" element={<SingleFocusPhoto />} />
+              <Route path="/index/music/:albID" element={<SingleFocusMusic />} />
+              
 
             {/* nav routes */}
               <Route path="/articles" element={<Articles />} />

@@ -1,79 +1,63 @@
-.card-deck {
-    background-color: azure;
-    color: black;
-    position: relative;
-    /* z-index: -1; */
-  }
+.panel-sec {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  margin: 0 30px;
+  justify-content: space-between;
+}
 
-  /* .card-deck > * {
-    z-index: 1;
-  } */
-  
-  
-  .panel-box, .panel-sec {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin: 0 30px;
-    z-index: 5;
-  }
-  
-  .panel-card, .item-frame {
-    /* background-color: aquamarine; */
-    padding: 5px;
-    margin: 5px;
-    border-bottom: 4px double lightsteelblue;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-top-left-radius: 3%;
-    border-top-right-radius: 3px;
-  }
-  
-  .panel-card:hover {
-    border-radius: 7px;
-    cursor: alias;
-    /* background-color: aquamarine; */
-    box-shadow: 0px 5px 10px black;
-  }
+.item-frame {
+  padding: 5px;
+  margin: 5px;
+  border-bottom: 4px double lightsteelblue;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 3%;
+  border-top-right-radius: 3px;
+}
 
-  .item-frame > img:hover {
-    cursor: alias;
-    box-shadow: 0px 50px 50px black;
-  }
-  
-  .img-prvw, .item-frame > img {
-    height: 150px;
-    width: 150px;
-    display: block;
-    margin: 5px;
-  }
-  
-  .panel-title, .pnl-ttl {
-    font-size: 1em;
-    font-weight: 800;
-    margin: 0;
-    padding: 0;
-    padding-left: 10px;
-  }
+.item-frame:hover {
+  border-radius: 7px;
+  cursor: pointer;
+  /* box-shadow: 0px 5px 10px grey; */
+}
 
-  .pnl-auth {
-    font-size: .75em;
-    margin: 0;
-    padding: 0;
-    color: grey;
-    padding-left: 10px;
-  }
+.item-frame>img:hover {
+  cursor: pointer;
+  box-shadow: 0px 50px 50px rgb(73, 73, 73);
+}
 
-  .item-frame > span {
-    padding: 0 3px;
-    color: grey;
-    font-style: italic;
-    font-size: .7em;
-  }
+.item-frame>img {
+  height: 150px;
+  width: 150px;
+  display: block;
+}
 
-  .item-list {
-    display: none;
-  }
+.pnl-ttl {
+  font-size: 20px;
+  font-family: serif;
+  font-weight: 800;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+}
 
-  
-  
+.pnl-auth {
+  font-size: 10px;
+  margin: 0;
+  padding: 0;
+  color: rgb(88, 88, 88);
+  padding-left: 10px;
+}
+
+.item-frame>span {
+  padding: 0 3px;
+  margin:0;
+  color: grey;
+  font-style: italic;
+  font-size: .7em;
+}
+
+.item-list {
+  display: none;
+}

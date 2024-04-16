@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 
 import { SwapDecks } from "../js/SwapDecks";
 import { sketches } from "../data/mp3-meta";
@@ -13,7 +13,8 @@ const panelRollOut = () => {
         <section className="panel-sec">
             {bigData.map(chapter => {
                 return (
-                    <div className="item-frame" key={chapter.title}>
+                    <Link key={chapter.title} to={`./${chapter.media}/${chapter.title}`}>
+                    <div className="item-frame">
                         <span>{chapter.postDt}</span>
                         <span>{chapter.srcUrl}</span>
                         <img src={`../../../assets/icons/${chapter.artUrl}`}></img>
@@ -31,6 +32,7 @@ const panelRollOut = () => {
                             })}
                         </div>
                     </div>
+                    </Link>
                 )
             })}
         </section>

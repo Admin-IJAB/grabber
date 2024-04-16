@@ -14,8 +14,25 @@ const realIdx = (act) => {
     return position;
 }
 
+
+
 const rowRollOut = () => {
-    let [rowIdx, setRowIdx] = useState(0)
+    let [currHist, setCurrHist] = useState([]);
+    let [rowIdx, setRowIdx] = useState(0);
+
+    const updateHistory = (a,b,c,d,e) => {
+        const histItem = {
+            author: a,
+            title: d,
+            srcFolder: b,
+            srcUrl: c,
+            media: e
+        }
+        
+        setCurrHist(prev => [...prev, histItem]);
+        console.log(currHist);
+    }
+
     return (
         <>
             {bigData.map((chapter, idx) => {
@@ -23,7 +40,7 @@ const rowRollOut = () => {
                     <>
                         {chapter.itemList.map((item, iidx) => {
                             return (
-                                <article className="song-row" key={idx + "-" + iidx}>
+                                <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
                                     
                                     <span>{rowIdx}</span>
                                     <span>{chapter.author}</span>

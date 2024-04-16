@@ -1,0 +1,24 @@
+.focus-cont {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    padding: 50px;
+}
+
+.focus-cont > img {
+    height: 250px;
+    
+}
+
+.focus-meta {
+    display: flex;
+    flex-direction: column;
+}
+
+.focus-meta > p {
+    margin: 0;
+}
+
+.focus-items {
+    margin: 5px 0;
+}

@@ -4,6 +4,7 @@
   padding: 5px;
   background-color: azure;
   height: 39vh;
+
 }
 
 .hist-box>p {
@@ -20,8 +21,8 @@
 }
 
 .pic-prvw {
-  height: 50px;
-  border: 5px groove gold;
+  height: 80px;
+  border: 2px groove black;
 }
 
 .pop-cont {
@@ -31,6 +32,7 @@
   display: flex;
   flex-direction: column;
   font-size: 10px;
+
 }
 
 .pop-btn {
@@ -45,11 +47,15 @@
   left: 0;
   bottom: 0;
   display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   flex-direction: column;
   flex-grow: 100;
-  z-index: 10;
-  background-color: #ffdbff;
-  margin-right: 100px;
+  /* z-index: 10; */
+  background-color: palegreen;
+  /* margin-right: 100px; */
+  width: 100vw;
+  border: 10px groove mediumspringgreen;
+  border-left: none;
 }
 
 .pop-panel>p {
@@ -60,13 +66,15 @@
   font-size: 20px;
 }
 
-.pop-panel > div {
+.pop-panel>div {
   justify-content: space-between;
   margin-right: 50px;
 }
 
 audio {
-  width: 80vw;
+
+  width: 500px;
+  justify-self: center;
 }
 
 .pic-hist {
@@ -79,14 +87,23 @@ audio {
   padding: 3px;
 }
 
-.pic-hist
-
-.mp3-hist {
+.pic-box {
   display: flex;
+  place-content: space-evenly;
 }
+
+
 
 .hist-label {
   padding: 10px;
   margin: 0 10px;
   font-size: 30px;
+  margin-right: auto;
+}
+
+.hist-sec {
+  /* border: 1px solid black; */
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  padding: 10px 0;
 }
