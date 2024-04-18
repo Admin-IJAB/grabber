@@ -83,7 +83,7 @@ export const ItemFocus = () => {
 
 export const SingleFocusPhoto = () => {
     const albumParam = useParams().albID;
-    const thisChap = imgDataObj.find(alb => alb.title == albumParam)
+    const thisChap = imgDataObj.find(alb => alb.srcUrl == albumParam)
     return (
         <div className="focus-cont">
             <img src={`../../../assets/icons/${thisChap.artUrl}`}></img>
@@ -112,7 +112,7 @@ export const SingleFocusPhoto = () => {
 
 export const SingleFocusMusic = () => {
     const albumParam = useParams().albID;
-    const thisChap = sketches.find(alb => alb.title == albumParam);
+    const thisChap = sketches.find(alb => alb.srcUrl == albumParam);
 
 
     return (

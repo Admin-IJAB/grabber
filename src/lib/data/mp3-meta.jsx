@@ -1,4 +1,3 @@
-
 export const sketches = [
     {
         title: 'Studs',
@@ -424,7 +423,7 @@ export const sketches = [
         ]
     },
     {
-        title: "BR/CH",
+        title: "BR-CH",
         authSh: 'S. Finder',
         author: 'Stud Finder',
         postDt: '1/10/2021',

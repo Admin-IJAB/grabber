@@ -26,7 +26,7 @@ function App() {
             {/* tests */}
               <Route path="/" element={<Home />} />
               <Route path="/index" element={<IndexPage />} />
-              <Route path="/index/photo/:albID(/:srcID)" element={<SingleFocusPhoto />} />
+              <Route path="/index/photo/:albID" element={<SingleFocusPhoto />} />
               <Route path="/index/music/:albID" element={<SingleFocusMusic />} />
               
 

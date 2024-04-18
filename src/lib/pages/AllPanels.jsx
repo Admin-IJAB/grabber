@@ -13,7 +13,7 @@ const panelRollOut = () => {
         <section className="panel-sec">
             {bigData.map(chapter => {
                 return (
-                    <Link key={chapter.title} to={`./${chapter.media}/${chapter.title}`}>
+                    <Link key={chapter.title} to={`./${chapter.media}/${chapter.srcUrl}`}>
                     <div className="item-frame">
                         <span>{chapter.postDt}</span>
                         <span>{chapter.srcUrl}</span>

@@ -1,10 +1,10 @@
 export const imgDataObj = [
     {
-        title: "Valle is Home",
-        authSh: "F.W",
+        title: "Valle-1",
+        authSh: "FW",
         author: "F. Wilson",
         postDt: "1/1/2099",
-        folder: "FW-valle-is-home",
+        folder: "2099_FW-VALLE1",
         artUrl: "xxtra1.png",
         srcUrl: "VIH-20",
         media: "photo",
@@ -125,10 +125,10 @@ export const imgDataObj = [
     },
     {
         title: "Philly in June",
-        authSh: "F.W",
+        authSh: "FW",
         author: "F. Wilson",
         postDt: "1/1/2099",
-        folder: "FW-philly-in-june",
+        folder: "2099_FW-PHILLY1",
         artUrl: "xxtra13.png",
         srcUrl: "PIJ-21",
         media: "photo",
@@ -181,10 +181,10 @@ export const imgDataObj = [
     },
     {
         title: "George's Garage",
-        authSh: "F.W",
+        authSh: "FW",
         author: "F. Wilson",
         postDt: "1/1/2099",
-        folder: "FW-georges-garage",
+        folder: "2099_FW-PHILLY2",
         artUrl: "xxtra5.JPG",
         srcUrl: "GG-21",
         media: "photo",
@@ -222,10 +222,10 @@ export const imgDataObj = [
     },
     {
         title: "Cherry Season",
-        authSh: "F.W",
+        authSh: "FW",
         author: "F. Wilson",
         postDt: "1/1/2099",
-        folder: "FW-cherry-season",
+        folder: "2099_FW-DC1",
         artUrl: "xxtra3.png",
         srcUrl: "CS-21",
         media: "photo",
@@ -367,23 +367,6 @@ export const imgDataObj = [
                 url: "Cherryszn-21.JPG"
             },
 
-        ]
-    },
-    {
-        title: "holder",
-        authSh: "F.W",
-        author: "F. Wilson",
-        postDt: "1/1/2099",
-        folder: "FW-philly-in-june",
-        artUrl: "xxtra11.jpg",
-        srcUrl: "TEST-99",
-        media: "photo",
-        itemList: [
-            {
-                name: "test",
-                url: "Phillyij-1.JPG"
-            },
-            
         ]
     },
     
