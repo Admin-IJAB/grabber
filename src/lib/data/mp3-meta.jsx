@@ -1,5 +1,110 @@
 export const sketches = [
     {
+        title: 'Next One',
+        authSh: 'S. Finder',
+        author: 'Stud Finder',
+        postDt: '02/18/2024',
+        folder: "2024_SF-NO",
+        artUrl: 'aa_sf_no.jpg',
+        srcUrl: 'sf-no',
+        media: "music",
+        itemList: [
+            {
+                name: '0 Dayz',
+                length: "1:47",
+                url: '1_sf_0-dayz.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'Dream Cym Loop',
+                length: "1:08",
+                url: '2_sf_dream-cym-loop.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'It IS Forever',
+                length: "2:31",
+                url: '3_sf_it-is-forever.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'Low Registration',
+                length: "1:41",
+                url: '4_sf_low-registration.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'Nobody Cry at the Circus',
+                length: "2:29",
+                url: '5_sf_nobody-cry-at-the-circus.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'Thin Skinned Loop',
+                length: "2:26",
+                url: '6_sf_thin-skinned-loop.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+        ]
+    },
+    {
+        title: 'Res Ipsa Loquiter',
+        authSh: 'L. Mauro',
+        author: 'Lukasz Mauro',
+        postDt: '09/26/2023',
+        folder: "2023_LM-RIL",
+        artUrl: 'aa_lm_ril.jpg',
+        srcUrl: 'lm-ril',
+        media: "music",
+        itemList: [
+            {
+                name: 'Matt Kacsmaryk Goes 2 Court',
+                length: "9:19",
+                url: '1_lm_matthew-kacsmaryk-goes-2-court.mp3',
+                ogFile: '--',
+                daw: 'TAS/ViB',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'Guns 4 Free `n Tennessee',
+                length: "2:06",
+                url: '2_lm_guns-4-free-n-tennessee.mp3',
+                ogFile: '--',
+                daw: 'TAS/ViB',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'She 8 the Whole Block',
+                length: "6:13",
+                url: '3_lm_she-8-the-whole-block.mp3',
+                ogFile: '--',
+                daw: 'TAS/ViB',
+                startDt: '--',
+                startTm: '--',
+            },
+        ]
+    },
+    {
         title: 'Studs',
         authSh: 'S. Finder',
         author: 'Stud Finder',
@@ -12,7 +117,7 @@ export const sketches = [
             {
                 name: 'Amanda Alarm (wake up hunny)',
                 length: '1:56',
-                url: 'amanda-alarm',
+                url: '1_sf_amanda-alarm-wake-up-hunny.mp3',
                 ogFile: 'bell-bottom-chords',
                 daw: 'LogicX',
                 startDt: '06-17-17',
@@ -21,7 +126,7 @@ export const sketches = [
             {
                 name: 'Barrixtown',
                 length: "1:10",
-                url: 'barrixtown',
+                url: '2_sf_barrixtown.mp3',
                 ogFile: 'BONKUS',
                 daw: 'FLstudio',
                 startDt: '08-05-19',
@@ -30,7 +135,7 @@ export const sketches = [
             {
                 name: 'Crystal Envelope / Return2sender',
                 length: "4:14",
-                url: 'crystal-env',
+                url: '3_sf_crystal-envelope-return-2-sender.mp3',
                 ogFile: 'dueling pianos',
                 daw: 'FLstudio',
                 startDt: '05-05-19',
@@ -39,7 +144,7 @@ export const sketches = [
             {
                 name: 'FL Disaster Zone',
                 length: "1:53",
-                url: 'fl-disaster',
+                url: '4_sf_fl-disaster-zone.mp3',
                 ogFile: 'cut90butwe',
                 daw: 'FLstudio',
                 startDt: '10-02-18',
@@ -48,7 +153,7 @@ export const sketches = [
             {
                 name: 'Froggy',
                 length: "1:10",
-                url: 'froggy',
+                url: '5_sf_froggy.mp3',
                 ogFile: 'cycle psycho',
                 daw: 'LogicX',
                 startDt: '06-02-18',
@@ -57,7 +162,7 @@ export const sketches = [
             {
                 name: 'Hello grommet',
                 length: "3:10",
-                url: 'hello-grommet',
+                url: '6_sf_hello-grommet.mp3',
                 ogFile: 'project99',
                 daw: 'LogicX',
                 startDt: '06-27-17',
@@ -66,7 +171,7 @@ export const sketches = [
             {
                 name: 'Kicking Space',
                 length: "1:18",
-                url: 'kicking-space',
+                url: '7_sf_kicking-space.mp3',
                 ogFile: 'creating space',
                 daw: 'FLstudio',
                 startDt: '04-13-19',
@@ -75,7 +180,7 @@ export const sketches = [
             {
                 name: 'Let It Fly',
                 length: "1:47",
-                url: 'let-it-fly',
+                url: '8_sf_let-it-fly.mp3',
                 ogFile: 'destroying space',
                 daw: 'FLstudio',
                 startDt: '04-20-19',
@@ -84,7 +189,7 @@ export const sketches = [
             {
                 name: 'Midi Compactor',
                 length: '1:19',
-                url: 'midi-compactor',
+                url: '9_sf_midi-compactor.mp3',
                 ogFile: 'empty',
                 daw: 'FLstudio',
                 startDt: '07-17-19',
@@ -93,7 +198,7 @@ export const sketches = [
             {
                 name: 'Playing With My Hair',
                 length: "1:27",
-                url: 'playing-w-my-hair',
+                url: '10_sf_playing-w-my-hair.mp3',
                 ogFile: 'clair',
                 daw: 'FLstudio',
                 startDt: '04-13-19',
@@ -102,7 +207,7 @@ export const sketches = [
             {
                 name: 'Rip Loop',
                 length: '3:43',
-                url: 'rip-arp',
+                url: '11_sf_rip-loop.mp3',
                 ogFile: 'protofunk',
                 daw: 'FLstudio',
                 startDt: '07-02-19',
@@ -111,7 +216,7 @@ export const sketches = [
             {
                 name: 'Rogue on 1-1',
                 length: '1:46',
-                url: 'rogue-on-1-1',
+                url: '12_sf_rogue-on-1-1.mp3',
                 ogFile: 'jumbles',
                 daw: 'FLstudio',
                 startDt: '05-03-19',
@@ -120,7 +225,7 @@ export const sketches = [
             {
                 name: 'Rust In Peace',
                 length: "1:43",
-                url: 'rust-in-peace',
+                url: '13_sf_rust-in-peace.mp3',
                 ogFile: 'disgus rstie',
                 daw: 'FLstudio',
                 startDt: '09-28-18',
@@ -129,7 +234,7 @@ export const sketches = [
             {
                 name: 'Sara / Tony Tonin',
                 length: '2:22',
-                url: 'sara-tonin',
+                url: '14_sf_sara-tony-tonin.mp3',
                 ogFile: 'rottunspahetti',
                 daw: 'LogicX',
                 startDt: '08-11-17',
@@ -138,7 +243,7 @@ export const sketches = [
             {
                 name: 'Silly Singing silicon',
                 length: "2:35",
-                url: 'silly-singing',
+                url: '15_sf_silly-singing-silicon.mp3',
                 ogFile: 'flunk',
                 daw: 'LogicX',
                 startDt: '08-28-18',
@@ -159,7 +264,7 @@ export const sketches = [
             {
                 name: 'TFMR2Y',
                 length: "7:32",
-                url: 'RE-1-TFMR2Y',
+                url: '1_lm_tfmr2y.mp3',
                 ogFile: '--',
                 daw: 'TAS/ViB',
                 startDt: '--',
@@ -168,7 +273,7 @@ export const sketches = [
             {
                 name: 'LBR.',
                 length: "1:10",
-                url: 'RE-2-LBR',
+                url: '2_lm_lbr.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -177,7 +282,7 @@ export const sketches = [
             {
                 name: 'DSGTTCTCOTC?',
                 length: "12:49",
-                url: 'RE-3-DSGTTCTCOTC',
+                url: '3_lm_dsgttctcotc.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -186,7 +291,7 @@ export const sketches = [
             {
                 name: 'G,A16YOWAAR15A600ROA/PF',
                 length: "4:06",
-                url: 'RE-4-PF',
+                url: '4_lm_ga16yowaar15a600roa-pf.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -195,7 +300,7 @@ export const sketches = [
             {
                 name: 'FKK,CYSWTDYW?',
                 length: '6:13',
-                url: 'RE-5-FKKCYSWTDYW',
+                url: '5_lm_fkkcyswtdyw.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -204,7 +309,7 @@ export const sketches = [
             {
                 name: 'AB',
                 length: '14:14',
-                url: 'RE-6-AB',
+                url: '6_lm_ab.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -213,7 +318,7 @@ export const sketches = [
             {
                 name: 'RS,LL,TC,TROYG;TONEAS,IJWYTK',
                 length: '5:15',
-                url: 'RE-7-MBS',
+                url: '7_lm_rslltctroygtoneasijwytk.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -222,7 +327,7 @@ export const sketches = [
             {
                 name: 'YR?/PD',
                 length: '14:31',
-                url: 'RE-8-YRPD',
+                url: '8_lm_yr-pd.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -231,7 +336,7 @@ export const sketches = [
             {
                 name: 'D',
                 length: '6:14',
-                url: 'RE-9-D',
+                url: '9_lm_d.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -240,7 +345,7 @@ export const sketches = [
             {
                 name: 'ABO (e)',
                 length: '7:27',
-                url: 'RE-B1-ABO',
+                url: '10_lm_abo-e.mp3',
                 ogFile: '--',
                 daw: 'TAS',
                 startDt: '--',
@@ -249,7 +354,7 @@ export const sketches = [
             {
                 name: 'AWOMD (e)',
                 length: '4:18',
-                url: 'RE-B2-AWOMD',
+                url: '11_lm_awomd-e.mp3',
                 ogFile: '--',
                 daw: 'TAS/ViB',
                 startDt: '--',
@@ -270,7 +375,7 @@ export const sketches = [
             {
                 name: 'Hotmess',
                 length: '3:04',
-                url: 'bcc-hotmess',
+                url: '1_lm_hotmess.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -279,7 +384,7 @@ export const sketches = [
             {
                 name: 'Atmosphere (interlude)',
                 length: '0:35',
-                url: 'bcc-atmosphere',
+                url: '2_lm_atmosphere-interlude.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -288,7 +393,7 @@ export const sketches = [
             {
                 name: 'Amanda',
                 length: '1:47',
-                url: 'bcc-amanda',
+                url: '3_lm_amanda.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -297,7 +402,7 @@ export const sketches = [
             {
                 name: 'Dare2Bare',
                 length: '2:35',
-                url: 'bcc-dare2bare',
+                url: '4_lm_dare-2-bare-bcc.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -306,7 +411,7 @@ export const sketches = [
             {
                 name: 'Quarantine (but its ok)',
                 length: '3:01',
-                url: 'bcc-quarantine',
+                url: '5_lm_quarantine-but-its-ok-bcc.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -315,7 +420,7 @@ export const sketches = [
             {
                 name: 'Stickyhold',
                 length: '1:27',
-                url: 'bcc-stickyhold',
+                url: '6_lm_stickyhold-bcc.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -324,7 +429,7 @@ export const sketches = [
             {
                 name: 'Stargate (reprise)',
                 length: '1:26',
-                url: 'bcc-stargate',
+                url: '7_lm_stargate-reprise.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -333,7 +438,7 @@ export const sketches = [
             {
                 name: 'Rap',
                 length: '0:54',
-                url: 'bcc-rap',
+                url: '8_lm_rap.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -342,7 +447,7 @@ export const sketches = [
             {
                 name: '27th&girard',
                 length: '4:18',
-                url: 'bcc-girard',
+                url: '9_lm_27th-and-girard.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -351,7 +456,7 @@ export const sketches = [
             {
                 name: 'Almostinato',
                 length: '2:34',
-                url: 'bcc-it-is-forever',
+                url: '10_lm_almostinato.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -360,7 +465,7 @@ export const sketches = [
             {
                 name: '5d',
                 length: '2:08',
-                url: 'bcc-5d',
+                url: '11_lm_5d-bcc.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -369,7 +474,7 @@ export const sketches = [
             {
                 name: 'Probably Wrong',
                 length: '2:58',
-                url: 'bcc-probably',
+                url: '12_lm_probably-wrong-bcc.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -378,7 +483,7 @@ export const sketches = [
             {
                 name: 'S. Balachander (bftb mx)',
                 length: '4:59',
-                url: 'bcc-sbala',
+                url: '13_lm_s-balachander-bftb-mix.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -387,7 +492,7 @@ export const sketches = [
             {
                 name: 'Boc (interlude)',
                 length: '1:22',
-                url: 'bcc-boc',
+                url: '14_lm_boc-interlude.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -396,7 +501,7 @@ export const sketches = [
             {
                 name: 'Toothpicks',
                 length: '2:31',
-                url: 'bcc-toothpicks',
+                url: '15_lm_toothpicks.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -405,7 +510,7 @@ export const sketches = [
             {
                 name: 'Pilotdrone',
                 length: '2:27',
-                url: 'bcc-pilotdrone',
+                url: '16_lm_pilotdrone.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -414,7 +519,7 @@ export const sketches = [
             {
                 name: 'Faultline',
                 length: '4:54',
-                url: 'bcc-faultline',
+                url: '17_lm_faultline.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -435,7 +540,7 @@ export const sketches = [
             {
                 name: 'Boiler Room',
                 length: "1:43",
-                url: 'boiler-room',
+                url: '1_sf_boiler-room.mp3',
                 ogFile: 'regular-meatball',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -444,7 +549,7 @@ export const sketches = [
             {
                 name: 'Chiminy Harker',
                 length: "0:43",
-                url: 'chiminy',
+                url: '2_sf_chiminy_harker.mp3',
                 ogFile: 'chiminy-harker',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -465,7 +570,7 @@ export const sketches = [
             {
                 name: '404',
                 length: '1:00',
-                url: '404',
+                url: '1_sf_404.mp3',
                 ogFile: 'hat slide shift',
                 daw: 'FLstudio',
                 startDt: '08-24-18',
@@ -474,7 +579,7 @@ export const sketches = [
             {
                 name: 'Are Those Thorns?',
                 length: "1:02",
-                url: 'are-those-thorns',
+                url: '2_sf_are-those-thorns.mp3',
                 ogFile: 'dr insta',
                 daw: 'FLstudio',
                 startDt: '05-04-19',
@@ -483,7 +588,7 @@ export const sketches = [
             {
                 name: 'Bubble Boy',
                 length: '1:54',
-                url: 'bubble-boy',
+                url: '3_sf_bubble-boy.mp3',
                 ogFile: 'saw distort',
                 daw: 'FLstudio',
                 startDt: '07-05-18',
@@ -492,7 +597,7 @@ export const sketches = [
             {
                 name: 'Childs Loop',
                 length: "1:48",
-                url: 'childs-loop',
+                url: '4_sf_childs-loop.mp3',
                 ogFile: 'dingus',
                 daw: 'FLstudio',
                 startDt: '10-11-18',
@@ -501,7 +606,7 @@ export const sketches = [
             {
                 name: 'Chix Loop',
                 length: "2:00",
-                url: 'chix',
+                url: '5_sf_chix.mp3',
                 ogFile: 'chix',
                 daw: 'FLstudio',
                 startDt: '05-17-19',
@@ -510,7 +615,7 @@ export const sketches = [
             {
                 name: 'Cleverly Loop',
                 length: "1:43",
-                url: 'clever',
+                url: '6_sf_clever.mp3',
                 ogFile: 'clever',
                 daw: 'FLstudio',
                 startDt: '11-10-18',
@@ -519,7 +624,7 @@ export const sketches = [
             {
                 name: 'Flawz',
                 length: '2:40',
-                url: 'flawz',
+                url: '7_sf_flawz.mp3',
                 ogFile: 'flaws',
                 daw: 'FLstudio',
                 startDt: '04-02-19',
@@ -528,7 +633,7 @@ export const sketches = [
             {
                 name: 'Gabby',
                 length: '0:40',
-                url: 'gabby',
+                url: '8_sf_gabby.mp3',
                 ogFile: 'gabby',
                 daw: 'FLstudio',
                 startDt: '03-13-19',
@@ -537,7 +642,7 @@ export const sketches = [
             {
                 name: 'Liptstick Halo',
                 length: "1:31",
-                url: 'liptstick-halo',
+                url: '9_sf_liptstick-halo.mp3',
                 ogFile: 'bop',
                 daw: 'FLstudio',
                 startDt: '07-28-18',
@@ -546,7 +651,7 @@ export const sketches = [
             {
                 name: 'Parks',
                 length: "0:20",
-                url: 'parks',
+                url: '10_sf_parks.mp3',
                 ogFile: 'parks',
                 daw: 'FLstudio',
                 startDt: '04-18-19',
@@ -555,7 +660,7 @@ export const sketches = [
             {
                 name: 'Sine Language',
                 length: '1:42',
-                url: 'sine-lang',
+                url: '11_sf_sine-lang.mp3',
                 ogFile: 'drane',
                 daw: 'FLstudio',
                 startDt: '10-26-18',
@@ -564,7 +669,7 @@ export const sketches = [
             {
                 name: 'SSX Loop',
                 length: '1:08',
-                url: 'ssx-loop',
+                url: '12_sf_ssx-loop.mp3',
                 ogFile: 'return',
                 daw: 'FLstudio',
                 startDt: '09-22-18',
@@ -573,7 +678,7 @@ export const sketches = [
             {
                 name: 'The Drs In.',
                 length: '1:18',
-                url: 'the-doctors-in',
+                url: '13_sf_the-doctors-in.mp3',
                 ogFile: 'immortal sounds',
                 daw: 'FLstudio',
                 startDt: '05-10-19',
@@ -582,7 +687,7 @@ export const sketches = [
             {
                 name: 'Woodshed',
                 length: "0:52",
-                url: 'woodshed',
+                url: '14_sf_woodshed.mp3',
                 ogFile: 'broot',
                 daw: 'FLstudio',
                 startDt: '05-07-18',
@@ -603,7 +708,7 @@ export const sketches = [
             {
                 name: '1800harp',
                 length: "2:55",
-                url: '1800harp',
+                url: '1_sf_1800harp.mp3',
                 ogFile: '1800harp',
                 daw: 'LogicX',
                 startDt: '04-16-17',
@@ -612,7 +717,7 @@ export const sketches = [
             {
                 name: 'Bailey melody 07',
                 length: "0:59",
-                url: 'bailey-melody',
+                url: '2_sf_bailey-melody-07.mp3',
                 ogFile: 'bounce12telly',
                 daw: 'LogicX',
                 startDt: '09-25-17',
@@ -621,7 +726,7 @@ export const sketches = [
             {
                 name: 'BBBB',
                 length: "1:43",
-                url: 'bbbb',
+                url: '3_sf_bbbb.mp3',
                 ogFile: 'wipsmalbas',
                 daw: 'LogicX',
                 startDt: '06-25-17',
@@ -630,7 +735,7 @@ export const sketches = [
             {
                 name: 'Case of the cookies',
                 length: "1:45",
-                url: 'cookies',
+                url: '4_sf_case-of-the-cookies.mp3',
                 ogFile: 'apple tree',
                 daw: 'LogicX',
                 startDt: '01-10-18',
@@ -639,7 +744,7 @@ export const sketches = [
             {
                 name: 'Doogood',
                 length: '1:32',
-                url: 'dogood',
+                url: '5_sf_doogood.mp3',
                 ogFile: 'dogood',
                 daw: 'LogicX',
                 startDt: '08-07-18',
@@ -648,7 +753,7 @@ export const sketches = [
             {
                 name: 'Exploitable Resources',
                 length: '1:24',
-                url: 'resources',
+                url: '6_sf_exploitable-resources.mp3',
                 ogFile: 'dougle',
                 daw: 'LogicX',
                 startDt: '10-06-18',
@@ -657,7 +762,7 @@ export const sketches = [
             {
                 name: 'Gimp',
                 length: '2:31',
-                url: 'gimp',
+                url: '7_sf_gimp.mp3',
                 ogFile: 'future stranger',
                 daw: 'LogicX',
                 startDt: '10-09-18',
@@ -666,7 +771,7 @@ export const sketches = [
             {
                 name: 'Go to feather',
                 length: "1:28",
-                url: 'go2feather',
+                url: '8_sf_go-to-feather.mp3',
                 ogFile: 'skum****',
                 daw: 'LogicX',
                 startDt: '07-27-17',
@@ -675,7 +780,7 @@ export const sketches = [
             {
                 name: '(I am aware of the) black box',
                 length: "1:50",
-                url: 'black-box',
+                url: '9_sf_i-am-aware-of-the-black-box.mp3',
                 ogFile: 'satch',
                 daw: 'LogicX',
                 startDt: '10-05-17',
@@ -684,7 +789,7 @@ export const sketches = [
             {
                 name: 'Is it forever?',
                 length: "2:24",
-                url: 'is-it-forever',
+                url: '10_sf_is-it-forever.mp3',
                 ogFile: 'flips',
                 daw: 'LogicX',
                 startDt: '09-13-17',
@@ -693,7 +798,7 @@ export const sketches = [
             {
                 name: 'Live from the polls',
                 length: "1:08",
-                url: 'polls',
+                url: '11_sf_live-from-the-polls.mp3',
                 ogFile: 'flowyhits',
                 daw: 'LogicX',
                 startDt: '06-19-17',
@@ -702,7 +807,7 @@ export const sketches = [
             {
                 name: 'Looking at a Screen',
                 length: '2:57',
-                url: 'looking-at-a-screen',
+                url: '12_sf_looking-at-a-screen.mp3',
                 ogFile: 'poppinggm',
                 daw: 'LogicX',
                 startDt: '08-12-17',
@@ -711,7 +816,7 @@ export const sketches = [
             {
                 name: 'Oh techre!',
                 length: "2:09",
-                url: 'oh-techre',
+                url: '13_sf_oh-techre.mp3',
                 ogFile: 'techre',
                 daw: 'LogicX',
                 startDt: '06-21-17',
@@ -720,7 +825,7 @@ export const sketches = [
             {
                 name: 'Sweet Dreams',
                 length: '2:35',
-                url: 'sweet-dreams',
+                url: '14_sf_sweet-dreams.mp3',
                 ogFile: 'sleep dreams',
                 daw: 'LogicX',
                 startDt: '05-15-18',
@@ -741,7 +846,7 @@ export const sketches = [
             {
                 name: 'Quarantine (but its ok)',
                 length: '2:56',
-                url: 'quarantine',
+                url: '1_lm_quarantine-but-its-ok.mp3',
                 ogFile: 'pilot',
                 daw: 'LogicX',
                 startDt: "06-25-17",
@@ -750,7 +855,7 @@ export const sketches = [
             {
                 name: '5d',
                 length: '3:01',
-                url: '5d',
+                url: '2_lm_5d.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -759,7 +864,7 @@ export const sketches = [
             {
                 name: 'Sticky Hold',
                 length: '1:27',
-                url: 'sticky-hold',
+                url: '3_lm_sticky-hold.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -768,7 +873,7 @@ export const sketches = [
             {
                 name: 'Probably Wrong',
                 length: '3:16',
-                url: 'probably-wrong',
+                url: '4_lm_probably-wrong.mp3',
                 ogFile: 'smoov',
                 daw: 'LogicX',
                 startDt: '06-08-17',
@@ -777,7 +882,7 @@ export const sketches = [
             {
                 name: 'Stargate',
                 length: '1:13',
-                url: 'stargate',
+                url: '5_lm_stargate.mp3',
                 ogFile: 'stargate',
                 daw: 'LogicX',
                 startDt: '--',
@@ -786,7 +891,7 @@ export const sketches = [
             {
                 name: 'Rap (1896 mix)',
                 length: '0:56',
-                url: 'rap-1896',
+                url: '6_lm_rap-1896-mix.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -795,7 +900,7 @@ export const sketches = [
             {
                 name: 'Dare 2 Bare',
                 length: '2:53',
-                url: 'dare-2-bare',
+                url: '7_lm_dare-2-bare.mp3',
                 ogFile: '--',
                 daw: '--',
                 startDt: '--',
@@ -817,7 +922,7 @@ export const sketches = [
             {
                 name: 'Ferox Recieved',
                 length: "3:17",
-                url: 'ferox',
+                url: '1_con_ferox-recieved.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -826,7 +931,7 @@ export const sketches = [
             {
                 name: 'Tsalal',
                 length: "1:50",
-                url: 'tsalal',
+                url: '2_con_tsalal.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -835,7 +940,7 @@ export const sketches = [
             {
                 name: 'Anxious...',
                 length: "4:35",
-                url: 'anxious-oblast',
+                url: '3_con_anxious.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -844,7 +949,7 @@ export const sketches = [
             {
                 name: 'Knavish Drone (cut)',
                 length: "16:07",
-                url: 'knavish-drode',
+                url: '4_con_knavish-drone.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -868,7 +973,7 @@ export const lilExtras = [
             {
                 name: 'Girard (demo)',
                 length: '4:47',
-                url: 'girard-noisy',
+                url: 'lm_demo_girard.mp3',
                 ogFile: 'passyunk-3am',
                 daw: 'Flstudio',
                 startDt: '--',
@@ -877,16 +982,25 @@ export const lilExtras = [
             {
                 name: 'Amanda (demo)',
                 length: '1:46',
-                url: 'amanda-morph',
+                url: 'lm_demo_amanda-morph.mp3',
                 ogFile: 'bell-bottom-chords',
                 daw: 'LogicX',
                 startDt: '06-17-17',
                 startTm: '8:13 PM',
             },
             {
-                name: 'it is forever (demo)',
+                name: 'it is forever (demo 1)',
                 length: "?:??",
-                url: 'it-is-forever',
+                url: 'lm_demo_it-is-forever1.mp3',
+                ogFile: '--',
+                daw: 'FLstudio',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'it is forever (demo 2)',
+                length: "?:??",
+                url: 'lm_demo_it-is-forever2.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -895,7 +1009,7 @@ export const lilExtras = [
             {
                 name: 'HM/FL (demo)',
                 length: "7:57",
-                url: 'hmfl-demo',
+                url: 'lm_demo_hmfl1.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -904,7 +1018,7 @@ export const lilExtras = [
             {
                 name: 'HM/FL (survivor)',
                 length: '7:57',
-                url: 'hmfl(survivor)',
+                url: 'lm_demo_hmfl2.mp3',
                 ogFile: '--',
                 daw: 'FLstudio',
                 startDt: '--',
@@ -913,7 +1027,7 @@ export const lilExtras = [
             {
                 name: 'Purple! (demo)',
                 length: '0:45',
-                url: 'purple',
+                url: 'lm_demo_purple.mp3',
                 ogFile: 'hot spooky mess',
                 daw: 'FLstudio',
                 startDt: '05-31-19',
@@ -922,11 +1036,38 @@ export const lilExtras = [
             {
                 name: 'Sea of Drones',
                 length: '3:34',
-                url: 'sea-of-drones',
+                url: 'lm_sea-of-drones.mp3',
                 ogFile: 'sea of drones',
                 daw: 'FLstudio',
                 startDt: '06-25-19',
                 startTm: '10:42 PM',
+            },
+            {
+                name: 'On Line 1',
+                length: '3:34',
+                url: 'lm_demo_on-line1.mp3',
+                ogFile: '--',
+                daw: '--',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'On Line 2',
+                length: '3:34',
+                url: 'lm_demo_on-line2.mp3',
+                ogFile: '--',
+                daw: '--',
+                startDt: '--',
+                startTm: '--',
+            },
+            {
+                name: 'On Line 3',
+                length: '3:34',
+                url: 'lm_demo_on-line3.mp3',
+                ogFile: '--',
+                daw: '--',
+                startDt: '--',
+                startTm: '--',
             },
         ]
     },
@@ -943,7 +1084,7 @@ export const lilExtras = [
             {
             name: 'Soundscape Source Feed vol. 1',
             length: "33:33",
-            url: 'pod1-198',
+            url: 'pod1-198.mp3',
             ogFile: 'brssfv1',
             daw: 'FLstudio',
             startDt: '09-30-18',
@@ -952,7 +1093,7 @@ export const lilExtras = [
         {
             name: 'Soundscape Source Feed vol. 2',
             length: "55:08",
-            url: 'pod2-112',
+            url: 'pod2-112.mp3',
             ogFile: 'brssfv2',
             daw: 'FLstudio',
             startDt: '12-26-18',
@@ -961,7 +1102,7 @@ export const lilExtras = [
         {
             name: 'Soundscape Source Feed vol. 3',
             length: "40:27",
-            url: 'pod3-160',
+            url: 'pod3-160.mp3',
             ogFile: 'brssfv3',
             daw: 'FLstudio',
             startDt: '03-01-19',
