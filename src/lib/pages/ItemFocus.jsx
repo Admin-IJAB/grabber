@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
 import { useParams } from "react-router-dom";
@@ -19,61 +21,51 @@ export const ItemFocus = () => {
                 <div className="foc-row">
                     <span>1</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>2</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>3</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>4</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>5</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>1</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>2</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>3</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>4</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
                 <div className="foc-row">
                     <span>5</span>
                     <span>song title</span>
-                    <span>song URL</span>
                     <span>9:00</span>
                 </div>
             </div>
@@ -116,6 +108,14 @@ export const SingleFocusMusic = () => {
 
 
     return (
+        <>
+            <Link to="../index">
+                <div className="back-btn">
+                    <p>↚</p>
+                    <p>BACK</p>
+                </div>
+            </Link>
+        
         <div className="focus-cont">
             <img src={`../../../assets/icons/${thisChap.artUrl}`}></img>
             <div className="focus-meta">
@@ -128,15 +128,16 @@ export const SingleFocusMusic = () => {
             <div className="focus-items">
                 {thisChap.itemList.map((item, idx) => {
                     return (
-                        <div key={item.name}>
+                        <div key={item.name} className="foc-row">
                             <span>{idx}</span>
                             <span>{item.name}</span>
-                            <span>{item.url}</span>
+                            {/* <span>{item.url}</span> */}
                             <span>{item.length}</span>
                         </div>
                     )
                 })}
             </div>
         </div>
+        </>
     )
 }

@@ -9,7 +9,13 @@
 }
 
 .card-deck > h1 {
-  margin: 0;
+  width: 50%;
+  margin: auto;
+  padding: 10px 0 15px;
+  border: 10px groove gold;
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
 }
 
 .logo {
