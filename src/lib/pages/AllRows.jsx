@@ -16,54 +16,60 @@ const realIdx = (act) => {
 
 
 
-const rowRollOut = () => {
-    let [currHist, setCurrHist] = useState([]);
-    let [rowIdx, setRowIdx] = useState(0);
+// const rowRollOut = () => {
+//     let [currHist, setCurrHist] = useState([]);
+//     let [rowIdx, setRowIdx] = useState(0);
 
-    const updateHistory = (a,b,c,d,e) => {
-        const histItem = {
-            author: a,
-            title: d,
-            srcFolder: b,
-            srcUrl: c,
-            media: e
-        }
+//     const updateHistory = (a,b,c,d,e) => {
+//         const histItem = {
+//             author: a,
+//             title: d,
+//             srcFolder: b,
+//             srcUrl: c,
+//             media: e
+//         }
         
-        setCurrHist(prev => [...prev, histItem]);
-        console.log(currHist);
-    }
+//         setCurrHist(prev => [...prev, histItem]);
+//         console.log(currHist);
+//     }
 
-    return (
-        <div>
-            {bigData.map((chapter, idx) => {
-                return (
-                    <>
-                        {chapter.itemList.map((item, iidx) => {
-                            return (
-                                <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
+//     return (
+//         <div>
+//             {bigData.map((chapter, idx) => {
+//                 return (
+//                     <>
+//                         {chapter.itemList.map((item, iidx) => {
+//                             return (
+//                                 <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
                                     
-                                    <span>{rowIdx}</span>
-                                    <span>{chapter.author}</span>
-                                    <span>{item.name}</span>
-                                    <span>{chapter.title}</span>
-                                    <span>{chapter.srcUrl + "/" + item.url}</span>
-                                    <span>{item.length == null ? "--" : item.length}</span>
-                                    <span>{chapter.media}</span>
-                                </article>
-                            )
-                        })}
-                    </>
-                )
-            })}
-        </div>
-    )
-}
+//                                     <span>{rowIdx}</span>
+//                                     <span>{chapter.author}</span>
+//                                     <span>{item.name}</span>
+//                                     <span>{chapter.title}</span>
+//                                     <span>{chapter.srcUrl + "/" + item.url}</span>
+//                                     <span>{item.length == null ? "--" : item.length}</span>
+//                                     <span>{chapter.media}</span>
+//                                 </article>
+//                             )
+//                         })}
+//                     </>
+//                 )
+//             })}
+//         </div>
+//     )
+// }
 
 export const AllRows = () => {
+    let [rowIdx, setRowIdx] = useState(0);
+    const rr = () => {
+        const neuIdx = rowIdx++;
+        setRowIdx(neuIdx);
+        return neuIdx;
+    }
     return (
         <>
             <p>Row View</p>
-            <section className="row-box">
+            <section className="row-box" key="lol">
                 <article className="song-row" id="rowHeader" key="header-row">
                     <span>#</span>
                     <span>author</span>
@@ -76,12 +82,17 @@ export const AllRows = () => {
                 {/* {rowRollOut()} */}
                 {bigData.map((chapter, idx) => {
                 return (
-                    <>
+                    <div key={chapter.title + idx}>
                         {chapter.itemList.map((item, iidx) => {
                             return (
-                                <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
+                                
+                                <article 
+                                    className="song-row" 
+                                    key={item.name} 
+                                    // onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}
+                                >
                                     
-                                    <span>{idx}</span>
+                                    <span>{idx + iidx}</span>
                                     <span>{chapter.author}</span>
                                     <span>{item.name}</span>
                                     <span>{chapter.title}</span>
@@ -89,9 +100,10 @@ export const AllRows = () => {
                                     <span>{item.length == null ? "--" : item.length}</span>
                                     <span>{chapter.media}</span>
                                 </article>
+                            
                             )
                         })}
-                    </>
+                    </div>
                 )
             })}
             </section>
