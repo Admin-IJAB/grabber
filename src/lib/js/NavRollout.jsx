@@ -7,7 +7,7 @@ const navLogoSrc = "../../assets/icons/icon_bbb-red.png"
 
 // const historyBox = 
 export const NavRollout = () => {
-    
+
     return (
         <div className='nav-deck'>
             <a href="https://burnthis.space" target="_blank">
@@ -17,7 +17,17 @@ export const NavRollout = () => {
                 <JustPickOne />
             </ul>
             <div>
-                <ShowHistPlayer />
+                {/* <ShowHistPlayer /> */}
+                <div className="audio-cont">
+                    
+                    <audio controls>
+                        <source 
+                            src="https://forestw70.github.io/sketches-bcc-client/assets/music/amanda-alarm.mp3" 
+                            type="audio/mpeg"
+                            id="nowPlaying">
+                        </source>
+                    </audio>
+                </div>
             </div>
         </div>
     )

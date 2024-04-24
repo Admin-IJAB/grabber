@@ -1,6 +1,6 @@
 .song-row {
     display: grid;
-    grid-template-columns: .5fr 1fr 2fr 1fr 1.5fr .5fr 1fr;
+    grid-template-columns: .3fr 1fr 2fr 1fr 2fr .5fr 1fr;
     align-items: left;
     font-size: 14px;
     margin: 1px 0;

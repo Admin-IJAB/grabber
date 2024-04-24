@@ -39,20 +39,17 @@ const panelRollOut = () => {
     )
 }
 
-export const AllPanels = () => {
+export const AllPanels = ({ hist, setHist}) => {
     let paramId = useParams().chapter;
     // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
-
+    console.log(hist)
     
 
     return (
         <div>
-            <h2>pics page</h2>
-            <p>You are looking at the {paramId} page</p>
             
             <div className="panel-box">
-                <p>Panel View</p>
-                {/* <SwapDecks /> */}
+                
                 {panelRollOut()}
             </div>
         </div>

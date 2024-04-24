@@ -73,6 +73,8 @@ export const ItemFocus = () => {
     )
 }
 
+
+
 export const SingleFocusPhoto = () => {
     const albumParam = useParams().albID;
     const thisChap = imgDataObj.find(alb => alb.srcUrl == albumParam)
@@ -102,6 +104,11 @@ export const SingleFocusPhoto = () => {
     )
 }
 
+const loadPrvw = (url, name) => {
+    console.log(url + name)
+    localStorage.setItem("musHist", JSON.stringify({name: url}))
+}
+
 export const SingleFocusMusic = () => {
     const albumParam = useParams().albID;
     const thisChap = sketches.find(alb => alb.srcUrl == albumParam);
@@ -128,7 +135,7 @@ export const SingleFocusMusic = () => {
             <div className="focus-items">
                 {thisChap.itemList.map((item, idx) => {
                     return (
-                        <div key={item.name} className="foc-row">
+                        <div key={item.name} className="foc-row"  onClick={() => loadPrvw(item.url, item.name)}>
                             <span>{idx}</span>
                             <span>{item.name}</span>
                             {/* <span>{item.url}</span> */}

@@ -34,7 +34,7 @@ const rowRollOut = () => {
     }
 
     return (
-        <>
+        <div>
             {bigData.map((chapter, idx) => {
                 return (
                     <>
@@ -55,7 +55,7 @@ const rowRollOut = () => {
                     </>
                 )
             })}
-        </>
+        </div>
     )
 }
 
@@ -73,7 +73,27 @@ export const AllRows = () => {
                     <span>length</span>
                     <span>media</span>
                 </article>
-                {rowRollOut()}
+                {/* {rowRollOut()} */}
+                {bigData.map((chapter, idx) => {
+                return (
+                    <>
+                        {chapter.itemList.map((item, iidx) => {
+                            return (
+                                <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
+                                    
+                                    <span>{idx}</span>
+                                    <span>{chapter.author}</span>
+                                    <span>{item.name}</span>
+                                    <span>{chapter.title}</span>
+                                    <span>{chapter.srcUrl + "/" + item.url}</span>
+                                    <span>{item.length == null ? "--" : item.length}</span>
+                                    <span>{chapter.media}</span>
+                                </article>
+                            )
+                        })}
+                    </>
+                )
+            })}
             </section>
         </>
     )

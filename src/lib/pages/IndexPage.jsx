@@ -13,9 +13,8 @@ const testImport = sketches.concat(imgDataObj);
 export const IndexPage = () => {
     return (
         <>
-            <p>Welcome to the .space index</p>
+            <h2>Welcome to the .space index</h2>
             <div>
-                <p>All views display tests</p>
 
                 <div>
                     <p>Item Focus</p>
