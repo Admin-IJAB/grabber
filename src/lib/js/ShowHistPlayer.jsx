@@ -1,25 +1,66 @@
 import { Popover } from "@headlessui/react";
 import { useState, useEffect } from "react";
+
+import { useHistory } from "../js/HistContext";
+
 import '../styles/historyMod.css'
 
-export const ShowHistPlayer = () => {
+export const MediaPlayer = () => {
+    const { history, updateHistory } = useHistory();
+    return (
+        <Popover className="media-container">
+            <Popover.Button className="peek-btn">PEEK</Popover.Button>
+            <Popover.Panel className="media-panel">
+                <p>~History~</p>
+                <div className="the-latest">
+                    <p className="media-label">Now playing: {history[0].iName}</p>
+                    <audio controls>
+                        <source src={`../../assets/music/${history[0].fUrl}/${history[0].sUrl}`} type="audio/mpeg"></source>
+                    </audio>
+                    <p className="media-label">Last Viewed: {history[1].iName}</p>
+                    <img className="hero-pic" src={`../../assets/icons/${history[1].aUrl}`}></img>
+                </div>
+                <p>Viewed last</p>
+                <div className="the-history">
+                    {history.map(item => {
+                        return (
+                            <div key={item.iName}>
+                                <img className="history-pic" src={`../../assets/icons/${item.aUrl}`}></img>
+                                <span key={item.iName}>{item.iName}</span>
+                            </div>
+                        )
+                    })}
+                </div>
+            </Popover.Panel>
+        </Popover>
+    )
+}
 
+export const ShowHistPlayer = ({ allHistory }) => {
+    const { history, updateHistory } = useHistory();
     return (
         <>
             <Popover className="pop-cont">
                 <Popover.Button className="pop-btn">PEEK</Popover.Button>
                 <Popover.Panel className="pop-panel">
-                    
+
                     {/* <p>History</p> */}
 
                     <div className="mp3-hist hist-sec">
                         <p className="hist-label">MP3</p>
                         <audio controls>
-                            <source src="https://forestw70.github.io/sketches-bcc-client/assets/music/amanda-alarm.mp3" type="audio/mpeg"></source>
+                            <source src={`../../assets/music/${history[0].fUrl}/${history[0].sUrl}`} type="audio/mpeg"></source>
                         </audio>
                     </div>
+                    <div>
+                        <p className="hist-label">hist test</p>
 
-                    <div className="pic-hist hist-sec">
+                        {history.map(item => {
+                            return <span key={item.iName}>{item.iName}</span>
+                        })}
+                    </div>
+
+                    {/* <div className="pic-hist hist-sec">
                         <p className="hist-label">JPEG </p>
                         <div className="pic-box">
                             <img src="../../assets/icons/auth_lukasz-mauro.jpg" className="pic-prvw"></img>
@@ -30,7 +71,7 @@ export const ShowHistPlayer = () => {
                             <img src="../../assets/icons/xxtra7.png" className="pic-prvw"></img>
                         </div>
 
-                    </div>
+                    </div> */}
                 </Popover.Panel>
 
             </Popover>

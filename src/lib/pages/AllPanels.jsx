@@ -41,11 +41,11 @@ const panelRollOut = () => {
     )
 }
 
-export const AllPanels = () => {
+export const AllPanels = ({setHistory}) => {
     // let paramId = useParams().chapter;
     // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
-    const { history, setHistory } = HistContext();
-    console.log(history)
+    // const { history, setHistory } = HistContext();
+    // console.log(history)
     
 
     return (

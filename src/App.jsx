@@ -19,16 +19,20 @@ import { HistProvider } from "./lib/js/HistContext.jsx";
 import { ShowHistPlayer } from "./lib/js/showHistPlayer.jsx";
 
 function App() {
-  const [allHistory, setAllHistory] = useState(
-    {
-      iName: "S. Finder - 0 Dayz",
-      url: "1_sf_0-dayz.mp3",
-    },
-    {
-      iName: "F. W - chess",
-      url: "Valle-8.JPG",
-    }
-  );
+  // const [allHistory, setAllHistory] = useState([
+  //   {
+  //     iName: "S. Finder - 0 Dayz",
+  //     url: "1_sf_0-dayz.mp3",
+  //     media: "music",
+  //   },
+  //   {
+  //     iName: "F. W - chess",
+  //     url: "Valle-8.JPG",
+  //     media: "photo",
+  //   }
+  // ]
+
+  // );
 
   useEffect(() => {
     document.title = "burnthis.space";
@@ -52,11 +56,10 @@ function App() {
             {/* nav routes */}
             <Route path="/articles" element={<Articles />} />
             <Route path="/inspo" element={<Inspo />} />
-            <Route path="/mp3s/" element={<AllRows />} />
+            <Route path="/mp3s/" element={<AllRows />}
+            />
             <Route path="/mp3s/:chapter" element={<AllRows />} />
-            <Route
-              path="/pics"
-              element={<AllPanels hist={allHistory} setHist={setAllHistory} />}
+            <Route path="/pics" element={<AllPanels />}
             />
             <Route path="/pics/:chapter" element={<AllPanels />} />
             <Route path="/home" element={<Home />} />

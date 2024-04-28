@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
 import { useParams } from "react-router-dom";
+
+import { useHistory } from "../js/HistContext";
+
 import '../styles/disp-focus.css';
 
 export const ItemFocus = () => {
@@ -73,8 +76,6 @@ export const ItemFocus = () => {
     )
 }
 
-
-
 export const SingleFocusPhoto = () => {
     const albumParam = useParams().albID;
     const thisChap = imgDataObj.find(alb => alb.srcUrl == albumParam)
@@ -112,7 +113,18 @@ const loadPrvw = (url, name) => {
 export const SingleFocusMusic = () => {
     const albumParam = useParams().albID;
     const thisChap = sketches.find(alb => alb.srcUrl == albumParam);
+    const { history, updateHistory } = useHistory();
 
+    const handleClick = (auth, ttl, src, art, fldr, med) => {
+        const addedItem = {
+          iName: auth + " - " + ttl,
+          fUrl: fldr,
+          sUrl: src,
+          aUrl: art,
+          media: med
+        }
+        updateHistory(addedItem);
+      }
 
     return (
         <>
@@ -135,7 +147,10 @@ export const SingleFocusMusic = () => {
             <div className="focus-items">
                 {thisChap.itemList.map((item, idx) => {
                     return (
-                        <div key={item.name} className="foc-row"  onClick={() => loadPrvw(item.url, item.name)}>
+                        <div 
+                            key={item.name} 
+                            className="foc-row"  
+                            onClick={() => handleClick(thisChap.authSh, item.name, item.url, thisChap.artUrl, thisChap.folder, thisChap.media)}>
                             <span>{idx}</span>
                             <span>{item.name}</span>
                             {/* <span>{item.url}</span> */}

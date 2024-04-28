@@ -53,11 +53,14 @@ export const RowConstruct = (messObj) => {
             newObj.push({
                 rowKey: chapter.media + `${idx}-${iidx}`,
                 rAuth: chapter.author,
+                rAuSh: chapter.authSh,
                 rName: item.name,
                 rTitle: chapter.title,
-                rUrl: chapter.srcUrl + "/" + item.url,
+                rSrc: chapter.srcUrl + "/" + item.url,
+                rArt: chapter.artUrl,
                 rLength: item.length == null ? "--" : item.length,
-                rMedia: chapter.media
+                rMedia: chapter.media,
+                rFolder: chapter.folder
             })
         })
     })

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { JustPickOne } from "./NavOptions";
-import { ShowHistPlayer } from "./ShowHistPlayer";
+import { ShowHistPlayer, MediaPlayer } from "./ShowHistPlayer";
 import "../styles/navMenu.css"
 
 const navLogoSrc = "../../assets/icons/icon_bbb-red.png"
@@ -16,9 +16,9 @@ export const NavRollout = () => {
             <ul className='nav-btns'>
                 <JustPickOne />
             </ul>
+            <MediaPlayer />
             <div>
-                {/* <ShowHistPlayer /> */}
-                <div className="audio-cont">
+                {/* <div className="audio-cont">
                     
                     <audio controls>
                         <source 
@@ -27,7 +27,7 @@ export const NavRollout = () => {
                             id="nowPlaying">
                         </source>
                     </audio>
-                </div>
+                </div> */}
             </div>
         </div>
     )
