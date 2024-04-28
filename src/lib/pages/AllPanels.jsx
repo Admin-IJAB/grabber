@@ -4,6 +4,8 @@ import { SwapDecks } from "../js/SwapDecks";
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
 
+import { HistContext } from "../js/HistContext";
+
 import "../styles/disp-cards.css"
 
 const bigData = sketches.concat(imgDataObj);
@@ -39,10 +41,11 @@ const panelRollOut = () => {
     )
 }
 
-export const AllPanels = ({ hist, setHist}) => {
-    let paramId = useParams().chapter;
+export const AllPanels = () => {
+    // let paramId = useParams().chapter;
     // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
-    console.log(hist)
+    const { history, setHistory } = HistContext();
+    console.log(history)
     
 
     return (

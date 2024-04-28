@@ -1,112 +1,59 @@
-import { Link, useParams } from "react-router-dom"
-import { React, useState } from "react";
-import { sketches } from "../data/mp3-meta"
+import { Link, useParams } from "react-router-dom";
+import { React, useState, useEffect, useRef } from "react";
+import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
+import { RowConstruct } from "../js/SwapDecks";
 
 import "../styles/disp-rows.css";
 
 const bigData = sketches.concat(imgDataObj);
 
-const realIdx = (act) => {
-    if (act === 1) {
-        setRowIdx = rowIdx + 1
-    }
-    return position;
-}
+// const handleHist = (histItem) => {
+//     localStorage.getItem("lastViewed") == null
+//         ? localStorage.setItem("lastViewed", [])
+//         : localStorage.setItem("lastViewed", JSON.stringify(localStorage.getItem("lastViewed").push(histItem)));
 
-
-
-// const rowRollOut = () => {
-//     let [currHist, setCurrHist] = useState([]);
-//     let [rowIdx, setRowIdx] = useState(0);
-
-//     const updateHistory = (a,b,c,d,e) => {
-//         const histItem = {
-//             author: a,
-//             title: d,
-//             srcFolder: b,
-//             srcUrl: c,
-//             media: e
-//         }
-        
-//         setCurrHist(prev => [...prev, histItem]);
-//         console.log(currHist);
-//     }
-
-//     return (
-//         <div>
-//             {bigData.map((chapter, idx) => {
-//                 return (
-//                     <>
-//                         {chapter.itemList.map((item, iidx) => {
-//                             return (
-//                                 <article className="song-row" key={idx + "-" + iidx} onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}>
-                                    
-//                                     <span>{rowIdx}</span>
-//                                     <span>{chapter.author}</span>
-//                                     <span>{item.name}</span>
-//                                     <span>{chapter.title}</span>
-//                                     <span>{chapter.srcUrl + "/" + item.url}</span>
-//                                     <span>{item.length == null ? "--" : item.length}</span>
-//                                     <span>{chapter.media}</span>
-//                                 </article>
-//                             )
-//                         })}
-//                     </>
-//                 )
-//             })}
-//         </div>
-//     )
+//     console.log(localStorage.getItem("lastViewed"));    
 // }
 
 export const AllRows = () => {
-    let [rowIdx, setRowIdx] = useState(0);
-    const rr = () => {
-        const neuIdx = rowIdx++;
-        setRowIdx(neuIdx);
-        return neuIdx;
-    }
-    return (
-        <>
-            <p>Row View</p>
-            <section className="row-box" key="lol">
-                <article className="song-row" id="rowHeader" key="header-row">
-                    <span>#</span>
-                    <span>author</span>
-                    <span>title</span>
-                    <span>chapter</span>
-                    <span>url</span>
-                    <span>length</span>
-                    <span>media</span>
-                </article>
-                {/* {rowRollOut()} */}
-                {bigData.map((chapter, idx) => {
-                return (
-                    <div key={chapter.title + idx}>
-                        {chapter.itemList.map((item, iidx) => {
-                            return (
-                                
-                                <article 
-                                    className="song-row" 
-                                    key={item.name} 
-                                    // onClick={() => updateHistory(chapter.authSh, chapter.srcUrl, item.url, item.name, chapter.media)}
-                                >
-                                    
-                                    <span>{idx + iidx}</span>
-                                    <span>{chapter.author}</span>
-                                    <span>{item.name}</span>
-                                    <span>{chapter.title}</span>
-                                    <span>{chapter.srcUrl + "/" + item.url}</span>
-                                    <span>{item.length == null ? "--" : item.length}</span>
-                                    <span>{chapter.media}</span>
-                                </article>
-                            
-                            )
-                        })}
-                    </div>
-                )
-            })}
-            </section>
-        </>
-    )
-}
+  const [rowsLoaded, setRowsLoaded] = useState(RowConstruct(bigData));
+  
+  return (
+    <>
+      <p>Row View</p>
+      <section className="row-box" key="lol">
+        <article className="song-row" id="rowHeader" key="header-row">
+          <span>#</span>
+          <span>author</span>
+          <span>title</span>
+          <span>chapter</span>
+          <span>url</span>
+          <span>length</span>
+          <span>media</span>
+        </article>
+        
+        {/* {console.log(rowsLoaded)} */}
+        {rowsLoaded.map((iObj, index) => {
+            return (
+                <article 
+                    className="song-row" 
+                    key={iObj.rowKey}
+                    // onClick={handleHist(iObj)}
+                >
+                
+                <span>{index + 1}</span>
+                <span>{iObj.rAuth}</span>
+                <span>{iObj.rName}</span>
+                <span>{iObj.rTitle}</span>
+                <span>{iObj.rUrl}</span>
+                <span>{iObj.rLength}</span>
+                <span>{iObj.rMedia}</span>
+              </article>
+            )
+        })}
+      </section>
+    </>
+  );
+};
+

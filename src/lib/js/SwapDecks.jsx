@@ -46,6 +46,25 @@ const swapChapter = (cName) => {
         return items;
 }
 
+export const RowConstruct = (messObj) => {
+    let newObj = [];
+    messObj.map((chapter, idx) => {
+        chapter.itemList.map((item, iidx) => {
+            newObj.push({
+                rowKey: chapter.media + `${idx}-${iidx}`,
+                rAuth: chapter.author,
+                rName: item.name,
+                rTitle: chapter.title,
+                rUrl: chapter.srcUrl + "/" + item.url,
+                rLength: item.length == null ? "--" : item.length,
+                rMedia: chapter.media
+            })
+        })
+    })
+    // console.log(newObj)
+    return newObj;
+}
+
 export const SwapDecks = () => {
     let paramId = useParams().chapter;
     let loadedChapter = loadDefault();
