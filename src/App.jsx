@@ -16,23 +16,9 @@ import {
 import { HeroFocus } from "./lib/js/HeroFocus";
 import { SingleFocusMusic, SingleFocusPhoto } from "./lib/pages/ItemFocus.jsx";
 import { HistProvider } from "./lib/js/HistContext.jsx";
-import { ShowHistPlayer } from "./lib/js/showHistPlayer.jsx";
 
 function App() {
-  // const [allHistory, setAllHistory] = useState([
-  //   {
-  //     iName: "S. Finder - 0 Dayz",
-  //     url: "1_sf_0-dayz.mp3",
-  //     media: "music",
-  //   },
-  //   {
-  //     iName: "F. W - chess",
-  //     url: "Valle-8.JPG",
-  //     media: "photo",
-  //   }
-  // ]
-
-  // );
+  
 
   useEffect(() => {
     document.title = "burnthis.space";
@@ -43,7 +29,6 @@ function App() {
       <HistProvider>
         <NavRollout />
         <div className="card-deck">
-          {/* <ShowHistPlayer /> */}
           <h1>https://burnthis.space</h1>
           {/* <HeroFocus /> */}
           <Routes>

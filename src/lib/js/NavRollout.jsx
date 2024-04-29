@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { JustPickOne } from "./NavOptions";
-import { ShowHistPlayer, MediaPlayer } from "./ShowHistPlayer";
+import { MediaPlayer } from "./ShowHistPlayer";
 import "../styles/navMenu.css"
 
 const navLogoSrc = "../../assets/icons/icon_bbb-red.png"

@@ -21,6 +21,9 @@ export const HistProvider = ({ children }) => {
       ]);
 
       const updateHistory = (item) => {
+        if (history.length >= 24) {
+            history.pop();
+        }
         setHistory([item, ...history])
       }
 
