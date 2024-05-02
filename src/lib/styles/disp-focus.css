@@ -45,7 +45,7 @@
     color: grey;
 }
 
-.focus-items {
+.focus-rows {
     /* margin: 0 auto; */
     flex-grow: 1;
     margin-top: 75px;
@@ -64,12 +64,38 @@
     font-size: 18px;
 }
 
-.foc-row:hover {
+.focus-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+}
+
+.foc-card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.foc-card > img {
+    height: 60px;
+}
+
+.foc-card > span {
+    font-size: .5rem;
+}
+
+.foc-row:hover,
+.foc-card:hover {
     background-color: rgb(149, 192, 230);
     cursor: pointer;
     font-style: italic;
 }
 
+
+/*  */
+/* Back Btn */
+/*  */
 .back-btn {
     background-color: antiquewhite;
     /* width: 80px; */

@@ -10,9 +10,16 @@ import "../styles/disp-cards.css"
 
 const bigData = sketches.concat(imgDataObj);
 
-const panelRollOut = () => {
+export const AllPanels = () => {
+    // let paramId = useParams().chapter;
+    // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
+    // const { history, setHistory } = HistContext();
+    // console.log(history)
+    
+
     return (
-        <section className="panel-sec">
+        <div>
+            <section className="panel-sec">
             {bigData.map(chapter => {
                 return (
                     <Link key={chapter.title} to={`./${chapter.media}/${chapter.srcUrl}`}>
@@ -38,23 +45,6 @@ const panelRollOut = () => {
                 )
             })}
         </section>
-    )
-}
-
-export const AllPanels = ({setHistory}) => {
-    // let paramId = useParams().chapter;
-    // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
-    // const { history, setHistory } = HistContext();
-    // console.log(history)
-    
-
-    return (
-        <div>
-            
-            <div className="panel-box">
-                
-                {panelRollOut()}
-            </div>
         </div>
     )
 }
