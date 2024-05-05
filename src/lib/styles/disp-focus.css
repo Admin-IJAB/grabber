@@ -57,7 +57,7 @@
 
 .foc-row {
     display: grid;
-    grid-template-columns: .5fr 5fr 1fr;
+    grid-template-columns: .5fr 5fr 1fr .25fr;
     /* border-bottom: 1px rgb(201, 195, 195) dashed; */
     padding: 10px;
     line-height: 10px;
@@ -93,6 +93,23 @@
 }
 
 
+/* info */
+.info-btn {
+    color: white;
+    background-color: blue;
+    font-weight: 900;
+    font-size: 1rem;
+    padding: 1px 5px;
+    justify-self: center;
+    border-radius: 10px;
+}
+
+.info-btn:hover {
+    background-color: rgb(108, 108, 255);
+    cursor: help;
+    font-style: italic;
+}
+
 /*  */
 /* Back Btn */
 /*  */
@@ -127,3 +144,4 @@
     background-color: rgb(236, 211, 179);
     cursor: pointer;
 }
+

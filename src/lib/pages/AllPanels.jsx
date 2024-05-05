@@ -1,6 +1,6 @@
 import { Link, useParams } from "react-router-dom"
 
-import { SwapDecks } from "../js/SwapDecks";
+// import { SwapDecks } from "../js/metaAggs";
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
 

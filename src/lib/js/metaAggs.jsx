@@ -1,6 +1,5 @@
 import { Link, useParams } from "react-router-dom";
 import { imgDataObj } from "../data/img-meta";
-import { HeroFocus } from "./HeroFocus";
 
 
 
@@ -66,33 +65,4 @@ export const RowConstruct = (messObj) => {
     })
     // console.log(newObj)
     return newObj;
-}
-
-export const SwapDecks = () => {
-    let paramId = useParams().chapter;
-    let loadedChapter = loadDefault();
-
-        if (paramId == undefined) {
-            console.log("default")
-        } else {
-            console.log(paramId)
-            loadedChapter = swapChapter(paramId)
-        }
-        const currentPannels = loadedChapter.map((item, idx) => (
-            <Link key={"pic" + idx} to={`/pics/${item.refId}`}>
-            <article className="panel-card">
-                
-                {loadPrvw(item.url, item.folder, paramId)}
-                <p className="panel-title">{item.title}</p>
-                <p>{item.url}</p>
-                <HeroFocus 
-                title={item.title}
-                path={item.url}
-                folder={item.folder}
-                refId={paramId}
-                />
-            </article>
-            </Link>
-        ))
-        return currentPannels;
 }

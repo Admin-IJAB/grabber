@@ -1,12 +1,13 @@
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
-import { useParams } from "react-router-dom";
 
 import PropTypes from "prop-types";
 
 import { useHistory } from "../js/HistContext";
+import { infoPopout } from "../js/showOneItem"
 
 import "../styles/disp-focus.css";
 
@@ -78,137 +79,6 @@ export const ItemFocus = () => {
   );
 };
 
-// export const SingleFocusPhoto = () => {
-//   const albumParam = useParams().albID;
-//   const thisChap = imgDataObj.find((alb) => alb.srcUrl == albumParam);
-//   return (
-//     <div className="focus-cont">
-//       <img src={`../../../assets/icons/${thisChap.artUrl}`}></img>
-//       <div className="focus-meta">
-//         <p>{thisChap.media}</p>
-//         <p>{thisChap.author}</p>
-//         <p>{thisChap.title}</p>
-//         <p>{thisChap.postDt}</p>
-//         <p>{thisChap.folder}</p>
-//       </div>
-//       <div className="focus-items">
-//         {thisChap.itemList.map((item, idx) => {
-//           return (
-//             <div className="foc-row" key={item.name}>
-//               <span>{idx}</span>
-//               <span>{item.name}</span>
-//               <span>{item.url}</span>
-//               <span>{thisChap.artUrl}</span>
-//             </div>
-//           );
-//         })}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export const SingleFocusMusic = () => {
-//   const albumParam = useParams().albID;
-//   const thisChap = sketches.find((alb) => alb.srcUrl == albumParam);
-//   const { history, updateHistory } = useHistory();
-
-//   const handleClick = (auth, ttl, src, art, fldr, med) => {
-//     const addedItem = {
-//       iName: auth + " - " + ttl,
-//       fUrl: fldr,
-//       sUrl: src,
-//       aUrl: art,
-//       media: med,
-//     };
-//     updateHistory(addedItem);
-//   };
-
-//   return (
-//     <>
-//       <Link to="../index">
-//         <div className="back-btn">
-//           <p>↚</p>
-//           <p>BACK</p>
-//         </div>
-//       </Link>
-
-//       <div className="focus-cont">
-//         <img src={`../../../assets/icons/${thisChap.artUrl}`}></img>
-//         <div className="focus-meta">
-//           <p>{thisChap.media}</p>
-//           <p>{thisChap.author}</p>
-//           <p>{thisChap.title}</p>
-//           <p>{thisChap.postDt}</p>
-//           <p>{thisChap.folder}</p>
-//         </div>
-//         <div className="focus-items">
-//           {thisChap.itemList.map((item, idx) => {
-//             return (
-//               <div
-//                 key={item.name}
-//                 className="foc-row"
-//                 onClick={() =>
-//                   handleClick(
-//                     thisChap.authSh,
-//                     item.name,
-//                     item.url,
-//                     thisChap.artUrl,
-//                     thisChap.folder,
-//                     thisChap.media
-//                   )
-//                 }
-//               >
-//                 <span>{idx}</span>
-//                 <span>{item.name}</span>
-//                 {/* <span>{item.url}</span> */}
-//                 <span>{item.length}</span>
-//               </div>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </>
-//   );
-// };
-
-// const TypeRollOut = ({ chapter }) => {
-//   if (!chapter) {
-//     return <div>Loading...</div>;
-//   }
-
-//   if (chapter.media == "music") {
-//     chapter.itemList.map((item, idx) => {
-//       return (
-//         <div
-//           key={item.name}
-//           className="foc-row"
-//           // onClick={() => histClick(chapter, item)}
-//         >
-//           <span>{idx + 1}</span>
-//           <span>{item.name}</span>
-//           <span>{item.length}</span>
-//         </div>
-//       );
-//     });
-//   } else if (chapter.media == "photo") {
-//     chapter.itemList.map((item, idx) => {
-//       return (
-//         <div
-//           key={item.name}
-//           className="foc-row"
-//           // onClick={() => histClick(chapter, item)}
-//         >
-//           <img src={`../../../assets/${chapter.folder}/${item.url}`}></img>
-//           <span>{idx + 1}</span>
-//           <span>{item.name}</span>
-//         </div>
-//       );
-//     });
-//   } else {
-//     console.log("bad data!" + chapter.media);
-//   }
-// };
-
 export const FocusOnIt = ({ chapType }) => {
   const { updateHistory } = useHistory();
   const histClick = (chap, item) => {
@@ -265,6 +135,8 @@ export const FocusOnIt = ({ chapType }) => {
                   <span>{idx + 1}</span>
                   <span>{item.name}</span>
                   <span>{item.length}</span>
+                  {/* <InfoPopout itemMedia={thisChap.media} itemFolder={thisChap.folder} itemIdx={idx} /> */}
+                  {infoPopout(thisChap.media, thisChap.folder, idx)}
                 </div>
               );
             })}

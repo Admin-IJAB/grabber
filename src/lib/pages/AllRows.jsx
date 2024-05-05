@@ -2,7 +2,7 @@ import { Link, useParams } from "react-router-dom";
 import { React, useState, useEffect, useRef } from "react";
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
-import { RowConstruct } from "../js/SwapDecks";
+import { RowConstruct } from "../js/metaAggs";
 import { useHistory } from "../js/HistContext";
 
 import "../styles/disp-rows.css";
