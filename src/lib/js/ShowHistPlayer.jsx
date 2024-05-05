@@ -34,10 +34,10 @@ export const MediaPlayer = () => {
                 <div className="the-history">
                     {history.map((item, idx) => {
                         return (
-                            <div className="hist-prvw" key={item.iName.split(" - ")[0] + idx}>
+                            <div className="hist-prvw" key={item.fUrl + idx}>
                                 <img className="history-pic" src={`../../assets/icons/${item.aUrl}`}></img>
                                 <p className="prvw-label" key={item.iName}>{item.iName.split(" - ")[0]}</p>
-                                <p key={item.iName}>{item.iName.split(" - ")[1]}</p>
+                                <p>{item.iName.split(" - ")[1]}</p>
                             </div>
                         )
                     })}

@@ -11,12 +11,7 @@ import "../styles/disp-cards.css"
 const bigData = sketches.concat(imgDataObj);
 
 export const AllPanels = () => {
-    // let paramId = useParams().chapter;
-    // paramId == undefined ? paramId = "def" : paramId = useParams().chapter;
-    // const { history, setHistory } = HistContext();
-    // console.log(history)
     
-
     return (
         <div>
             <section className="panel-sec">

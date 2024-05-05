@@ -16,7 +16,7 @@ import {
   IndexPage,
 } from "./lib/pages/_index.jsx";
 import { HeroFocus } from "./lib/js/HeroFocus";
-import { SingleFocusMusic, SingleFocusPhoto } from "./lib/pages/ItemFocus.jsx";
+// import { SingleFocusMusic, SingleFocusPhoto } from "./lib/pages/ItemFocus.jsx";
 import { HistProvider } from "./lib/js/HistContext.jsx";
 import { FocusOnIt } from "./lib/pages/ItemFocus.jsx";
 
