@@ -1,13 +1,59 @@
+.note-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
 .note-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 30px;
+    justify-content: left;
+    margin: 0 10px;
 }
   
 .note-item {
-    width: 35vw;
+    width: 40vw;
     border: 2px double black;
     margin: 5px;
     padding: 5px
+}
+
+.note-item > h3 {
+    font-size: 3rem;
+    margin: 1px;
+    font-family: serif;
+}
+
+.note-item > p {
+    margin: 0;
+    margin-left: 15px;
+    color: grey;
+    font-style: italic;
+}
+
+.note-list {
+    /* border-top: 3px double blue; */
+    padding-top: 15px;
+}
+
+.note-list > li {
+    border-top: 3px solid black;
+    border-right: 5px double blue;
+    /* margin: 5px 0; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+
+.note-list > li::marker {
+    font-size: 1.5rem;
+    color: red;
+}
+
+.note-list > li > span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+}
+
+.note-list > li > p {
+    margin-left: 20px;
+    font-style: italic;
 }

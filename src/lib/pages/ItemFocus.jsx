@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { sketches } from "../data/mp3-meta";
 import { imgDataObj } from "../data/img-meta";
@@ -121,8 +122,7 @@ export const FocusOnIt = ({ chapType }) => {
           <p>{thisChap.folder}</p>
         </div>
 
-        {/* <TypeRollOut media={chapType} chapter={thisChap} /> */}
-
+        {/* music row focus */}
         {thisChap.media == "music" && (
           <div className="focus-rows">
             {thisChap.itemList.map((item, idx) => {
@@ -142,6 +142,7 @@ export const FocusOnIt = ({ chapType }) => {
             })}
           </div>
         )}
+        {/* photo card focus */}
         {thisChap.media == "photo" && (
           <div className="focus-cards">
             {thisChap.itemList.map((item, idx) => {
@@ -151,11 +152,12 @@ export const FocusOnIt = ({ chapType }) => {
                   className="foc-card"
                   onClick={() => histClick(thisChap, item)}
                 >
-                  <img
-                    src={`../../../assets/pictures/${thisChap.folder}/${item.url}`}
-                  ></img>
-                  <span>{idx + 1}</span>
-                  <span>{item.name}</span>
+                  <div className="card-meta">
+                    <span>{idx + 1}</span>
+                    <span>{item.name}</span>
+                    {infoPopout(thisChap.media, thisChap.folder, idx)}
+                  </div>
+                  <LazyLoadImage src={`../../../assets/pictures/${thisChap.folder}/${item.url}`} />
                 </div>
               );
             })}

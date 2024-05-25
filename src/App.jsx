@@ -19,6 +19,7 @@ import {
 import { HistProvider } from "./lib/js/HistContext.jsx";
 import { FocusOnIt } from "./lib/pages/ItemFocus.jsx";
 
+
 function App() {
   useEffect(() => {
     document.title = "burnthis.space";
@@ -50,6 +51,7 @@ function App() {
             <Route path="/pics/:chapter" element={<AllPanels />} />
             <Route path="/home" element={<Home />} />
             <Route path="/notes/" element={<Notes />} />
+            {/* <Route path="/notes/" element={<JsxNotesTest />} /> */}
             <Route path="/notes/:chapter" element={<Notes />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>

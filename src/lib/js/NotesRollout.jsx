@@ -9,3 +9,23 @@ export const NotesRollout = () => {
     ))
     return allNotes;
 }
+
+export const JsxNotesTest = () => {
+    return (
+        <div>
+            {justSomeThoughts.map(list => {
+                <article key={list.title} className="note-item">
+                    <h3>{list.title}</h3>
+                    <p>{list.body}</p>
+                    <div>
+                        <li>
+                        {list.items.map((notes, idx) => {
+                            <p>{notes.ttl}</p>
+                        })}
+                        </li>
+                    </div>
+                </article>
+            })}
+        </div>
+    )
+}

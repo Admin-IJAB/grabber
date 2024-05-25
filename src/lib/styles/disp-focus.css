@@ -69,6 +69,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     flex-grow: 1;
+    font-family: monospace;
+    color: #0a0a0a;
 }
 
 .foc-card {
@@ -77,8 +79,16 @@
     padding: 5px;
 }
 
+.card-meta {
+    display: flex;
+    flex-direction: row;
+    font-size: .6rem;
+    place-content: space-between;
+}
+
 .foc-card > img {
-    height: 60px;
+    /* height: 75px; */
+    max-width: 15vw;
 }
 
 .foc-card > span {
