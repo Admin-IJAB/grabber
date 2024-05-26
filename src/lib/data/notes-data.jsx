@@ -181,5 +181,142 @@ export const justSomeThoughts = [
                 isChecked: 0
             },
         ]
-    }
+    },
+    {
+        title: "New Albums 2024!",
+        body: "just some albums i've been lisnin' to",
+        items: [
+            {
+                ttl: "Clark - Sus Dog",
+                iNote: "Wedding",
+                isChecked: 0
+            },
+            {
+                ttl: "Hainbach - Syn-Ket Studien",
+                iNote: "Studie E (Moderato)",
+                isChecked: 0
+            },
+            {
+                ttl: "G.U.N. - XIV Till Eternity",
+                iNote: "Eastside XIV",
+                isChecked: 0
+            },
+            {
+                ttl: "Roisin Murphy - You Knew",
+                iNote: "CooCool",
+                isChecked: 0
+            },
+            {
+                ttl: "Mykola Lysenko, Solomia Soroka, Arthur Greene",
+                iNote: "Romance, Op. 27",
+                isChecked: 0
+            },
+            {
+                ttl: "VHS Head - Phocus",
+                iNote: "The False Eye Closes",
+                isChecked: 0
+            },
+            {
+                ttl: "I Hate Sex - Circle Thinking",
+                iNote: "One By Metalica",
+                isChecked: 0
+            },
+            {
+                ttl: "Cristian Vogel - The Inertials",
+                iNote: "Seed Dogs",
+                isChecked: 0
+            },
+            {
+                ttl: "Fire-Toolz - I will not use the body's eyes today.",
+                iNote: "Vedic Software ~ Wet Interfacing",
+                isChecked: 0
+            },
+            {
+                ttl: "uami, Botsu a.k.a NGS - Dancing Flame",
+                iNote: "u&b",
+                isChecked: 0
+            },
+            {
+                ttl: "Burial - Dreamfear / Boy Sent From Above",
+                iNote: "Dreamfear",
+                isChecked: 0
+            },
+            {
+                ttl: "CAN - Future Days",
+                iNote: "Moonshake",
+                isChecked: 0
+            },
+            {
+                ttl: "Young Fathers - Heavy Heavy",
+                iNote: "Geronimo",
+                isChecked: 0
+            },
+            {
+                ttl: "Autechre - Draft 7.30",
+                iNote: "Theme Of Sudden Roundabout",
+                isChecked: 0
+            },
+            {
+                ttl: "Kanye West, Ty Dolla $ign - VULTURES1",
+                iNote: "PAPERWORK",
+                isChecked: 0
+            },
+            {
+                ttl: "The Wrens - The Meadowlands",
+                iNote: "Hopeless",
+                isChecked: 0
+            },
+            {
+                ttl: "Noname - Sundial",
+                iNote: "namesake",
+                isChecked: 0
+            },
+            {
+                ttl: "Qluster - Elemente",
+                iNote: "Tatum",
+                isChecked: 0
+            },
+            {
+                ttl: "MIKE, Tony Seltzer - Pinball ",
+                iNote: "2k24 Tour (feat. Niontay)",
+                isChecked: 0
+            },
+            {
+                ttl: "Frost Children - Hearth Room",
+                iNote: "Bob Dylan",
+                isChecked: 0
+            },
+            {
+                ttl: "Tennessee Ernie Ford - This Lusty Land!",
+                iNote: "Dark As A Dungeon",
+                isChecked: 0
+            },
+            {
+                ttl: "Mythic - ANTHOLOGY",
+                iNote: "The Oracle",
+                isChecked: 0
+            },
+            {
+                ttl: "Jenny Hates Techno - Alien Pond",
+                iNote: "Promise",
+                isChecked: 0
+            },
+            {
+                ttl: "MIKE - Burning Desire",
+                iNote: "Snake Charm",
+                isChecked: 0
+            },
+            {
+                ttl: "Danny Brown - Quaranta",
+                iNote: "Jenn's Terrific Vacation (feat. Kassa Overall)",
+                isChecked: 0
+            },
+            {
+                ttl: "μ-Ziq - 1977",
+                iNote: "Allegro",
+                isChecked: 0
+            },
+
+        ]
+    },
 ]
